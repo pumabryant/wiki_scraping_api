@@ -81,13 +81,7 @@ class Scraper:
             raw_page = open_url(url)
             if raw_page is not None:
                 soup = BeautifulSoup(raw_page, 'html.parser')
-                if group is ACTOR:
-                    self.scrape_actor(soup, url)
-                    url, group = (self.movie_queue.get(), MOVIE) if not self.movie_queue.empty() else (self.actor_queue.get(), ACTOR)
-                else:
-                    self.scrape_movie(soup, url)
-                    self.scrape_helper()
-                    url, group = (self.actor_queue.get(), ACTOR) if not self.actor_queue.empty() else (self.movie_queue.get(), MOVIE)
+                group, url = self.scrape_handler(group, soup, url)
             else:
                 logger.warning(f'Url:{url} is invalid')
                 url, group = self.get_any_url(group)
@@ -96,7 +90,19 @@ class Scraper:
                     return
                 continue
 
-    def scrape_helper(self):
+    def scrape_handler(self, group, soup, url):
+        if group is ACTOR:
+            self.scrape_actor(soup, url)
+            url, group = (self.movie_queue.get(), MOVIE) if not self.movie_queue.empty() \
+                else (self.actor_queue.get(), ACTOR)
+        else:
+            self.scrape_movie(soup, url)
+            self.scrape_all_actors()
+            url, group = (self.actor_queue.get(), ACTOR) if not self.actor_queue.empty() else \
+                (self.movie_queue.get(), MOVIE)
+        return group, url
+
+    def scrape_all_actors(self):
         while not self.actor_queue.empty():
             url = self.actor_queue.get()
 
@@ -135,17 +141,11 @@ class Scraper:
         # Check if we've already processed this url before
         if url in self.movie_urls:
             return
-        gross, title, year = get_movie(soup)
+        gross, title, year = get_movie_info(soup)
         if gross is not None and title is not None and year is not None:
             # Retrieve all the urls to the movie cast's Wikipedia page
             actor_urls = get_actor_urls(soup)
-            # Add the movie into our graph if the graph doesn't already store it
-            # and if we are able to find urls to the cast's Wikipedia pages
-            if title not in self.graph.get_vertices() and actor_urls:
-                # Store the url with the title of the movie it links to
-                self.movie_urls[url] = title
-                self.graph.add_vertex(MOVIE, title, gross, year)
-                self.num_movies += 1
+            self.add_movie(actor_urls, gross, title, url, year)
             if title in self.graph.get_vertices():
                 for actor_url in actor_urls:
                     # Make sure not to add already scraped Wikipedia pages into our actor queue
@@ -153,11 +153,23 @@ class Scraper:
                         self.actor_queue.put(actor_url)
                     # Otherwise, add an edge between the movie and actor
                     else:
-                        actor = self.actor_urls[actor_url]
-                        logger.info(f'Adding an edge between movie:{title} and actor:{actor}')
-                        actor_age = self.graph.get_vertex(actor).get_value1()
-                        weight = int(gross / actor_age)
-                        self.graph.add_edge(title, actor, weight)
+                        self.add_movie_edge(actor_url, gross, title)
+
+    def add_movie_edge(self, actor_url, gross, title):
+        actor = self.actor_urls[actor_url]
+        logger.info(f'Adding an edge between movie:{title} and actor:{actor}')
+        actor_age = self.graph.get_vertex(actor).get_value1()
+        weight = int(gross / actor_age)
+        self.graph.add_edge(title, actor, weight)
+
+    def add_movie(self, actor_urls, gross, title, url, year):
+        # Add the movie into our graph if the graph doesn't already store it
+        # and if we are able to find urls to the cast's Wikipedia pages
+        if title not in self.graph.get_vertices() and actor_urls:
+            # Store the url with the title of the movie it links to
+            self.movie_urls[url] = title
+            self.graph.add_vertex(MOVIE, title, gross, year)
+            self.num_movies += 1
 
     def scrape_actor(self, soup, url):
         """
@@ -167,18 +179,14 @@ class Scraper:
         :return: None
         """
         logger.info(f'Actor url:{url}')
-        age, name = get_actor(soup)
+        age, name = get_actor_info(soup)
         if age is not None and name is not None:
 
             # Retrieve all the urls to the Wikipedia pages of the films the actor stars in
             movie_urls = get_movie_urls(soup)
             # Add the actor into our graph if the graph doesn't already store it
             # and if we are able to find urls to the films the actor stars in
-            if name not in self.graph.get_vertices() and movie_urls:
-                # Store the url with the name of the actor it links to
-                self.actor_urls[url] = name
-                self.graph.add_vertex(ACTOR, name, age)
-                self.num_actors += 1
+            self.add_actor(age, movie_urls, name, url)
             if name in self.graph.get_vertices():
                 for movie_url in movie_urls:
                     # Make sure not to add already scraped Wikipedia pages into our movie queue
@@ -186,20 +194,30 @@ class Scraper:
                         self.movie_queue.put(movie_url)
                     # Otherwise, add an edge between the actor and movie
                     else:
-                        movie = self.movie_urls[movie_url]
-                        movie_gross = self.graph.get_vertex(movie).get_value1()
-                        weight = int(movie_gross / age)
-                        self.graph.add_edge(name, movie, weight)
+                        self.add_actor_edge(age, movie_url, name)
+
+    def add_actor(self, age, movie_urls, name, url):
+        if name not in self.graph.get_vertices() and movie_urls:
+            # Store the url with the name of the actor it links to
+            self.actor_urls[url] = name
+            self.graph.add_vertex(ACTOR, name, age)
+            self.num_actors += 1
+
+    def add_actor_edge(self, age, movie_url, name):
+        movie = self.movie_urls[movie_url]
+        movie_gross = self.graph.get_vertex(movie).get_value1()
+        weight = int(movie_gross / age)
+        self.graph.add_edge(name, movie, weight)
 
     def get_graph(self):
         return self.graph
 
 
-def get_actor(soup):
+def get_actor_info(soup):
     """
-    Retrieve actor information from the web-page, if possible
-    :param soup: The webpage to be searched
-    :return: The age and name of found actor, if any
+    Obtain the actor information, age and name, from the web-page
+    :param soup: The raw html representation of the Wikipedia page
+    :return: The age and name of found actor, if available
     """
     logger.info('Retrieving actor information from web-page')
     name = None
@@ -220,11 +238,12 @@ def get_actor(soup):
     return age, name
 
 
-def get_movie(soup):
+def get_movie_info(soup):
     """
-    Retrieve the movie information from the web-page, if possible
-    :param soup: The webpage to be searched
-    :return: The gross income and title of found movie, if any
+    Obtain the movie information, gross income, title,
+    and release date from the web-page
+    :param soup: The raw html representation of the Wikipedia page
+    :return: The gross income, title, and release date, if available
     """
 
     logger.info("Retrieving movie information from web-page")
@@ -232,11 +251,11 @@ def get_movie(soup):
     title = None
 
     title_box = soup.find('h1', attrs={'class': 'firstHeading'})
-    gross_box = get_gross(soup)
+    gross_box = get_movie_gross(soup)
 
     title = strip_tags(title, title_box)
     gross = strip_tags(gross, gross_box)
-    year = get_year(soup)
+    year = get_movie_year(soup)
     logger.info(f'Year found: {year}')
 
     if title is None or gross is None or year is None:
@@ -248,10 +267,10 @@ def get_movie(soup):
     return gross, title, year
 
 
-def get_gross(soup):
+def get_movie_gross(soup):
     """
-    Get the gross income from the movie's webpage, if possible
-    :param soup: The web-page to be searched
+    Obtain the gross income from the movie's Wikipedia page
+    :param soup: The raw html representation of the Wikipedia page
     :return: The element holding the gross income, if any
     """
     ths = soup.find_all('th')
@@ -261,29 +280,46 @@ def get_gross(soup):
     return None
 
 
-def get_year(soup):
+def get_movie_year(soup):
+    """
+    Obtain the release date of a movie from it's Wikipedia page
+    :param soup: The raw html representation of the Wikipedia page
+    :return: The year the movie was released, if available
+    """
     year = None
 
     ths = soup.find_all('th')
     for th in ths:
-        if th.text == "Release date":
+        if th.text == "Release date" and th.next_sibling is not None:
             div = th.next_sibling
-            if div is not None:
-                ul = div.find('ul')
-                if ul is not None:
-                    li = ul.next_element
-                    if li is not None:
-                        text = re.findall('[0-9]{4}', li.text)
-                        if text:
-                            year = int(text[0])
+            ul = div.find('ul')
+            if ul is not None and ul.next_element is not None:
+                li = ul.next_element
+                text = re.findall('[0-9]{4}', li.text)
+                if text:
+                    year = int(text[0])
             return year
 
     return year
 
 
+def get_movie_urls(soup):
+    """
+    Obtain all the movie urls on the actor's Wikipedia page
+    :param soup: The raw html representation of the Wikipedia page
+    :return: Any movie urls found in the page
+    """
+    url_links = get_movie_urls_div(soup)
+
+    if not url_links:
+        url_links = get_movie_urls_wikitable(soup)
+
+    return url_links
+
+
 def get_movie_urls_div(soup):
     """
-    Retrieve the urls from the web-page
+    Obtain movie urls from a actor Wikipedia, if they are inside div elements
     :param soup: The web-page to be searched
     :return: Any urls found
     """
@@ -302,17 +338,12 @@ def get_movie_urls_div(soup):
     return url_links
 
 
-def get_movie_urls(soup):
-
-    url_links = get_movie_urls_div(soup)
-
-    if not url_links:
-        url_links = get_movie_urls_wikitable(soup)
-
-    return url_links
-
-
 def get_movie_urls_wikitable(soup):
+    """
+    Obtain movie urls from a actor Wikipedia, if they are inside a wikitable element
+    :param soup: The raw html representation of the Wikipedia page
+    :return: Any movie urls found in the page
+    """
     logger.info(f'Retrieving urls by searching wikitable')
 
     span = soup.find('span', attrs={'class': 'mw-headline', 'id': 'Film'})
@@ -334,6 +365,11 @@ def get_movie_urls_wikitable(soup):
 
 
 def get_actor_urls(soup):
+    """
+    Obtain all the actor urls on the movies's Wikipedia page
+    :param soup: The raw html representation of the Wikipedia page
+    :return: Any actor urls found in the page
+    """
     logger.info(f'Retrieving actor urls')
     url_links = []
 
@@ -348,8 +384,9 @@ def get_actor_urls(soup):
             continue
         links = ns.findAll('a')
         for a in links:
-            url_links.append(WIKI_URL + a['href'])
-            print(WIKI_URL + a['href'])
+            url = WIKI_URL + a['href']
+            url_links.append(url)
+            logger.debug(f'Found Actor url: {url}')
 
     logger.info(f'Found {len(url_links)} actor url links')
 
@@ -369,44 +406,60 @@ def strip_tags(var, box):
     return var
 
 
-def parse_gross(gross):
-    gross = remove_paren_brack(gross)
-    gross = remove_non_alphanum(gross)
-    nums_found = re.findall('\\d*\\.?\\d+', gross)
+def parse_gross(gross_string):
+    """
+    Parse gross income string into integer
+    :param gross_string: String to be parsed
+    :return: Integer representation of the gross income string
+    """
+    logger.info(f'Parsing gross income string')
+    gross_string = remove_paren_brack(gross_string)
+    gross_string = remove_non_alphanum(gross_string)
+    nums_in_gross = re.findall('\\d*\\.?\\d+', gross_string)
 
-    logger.info(f'Alphanumeric Gross: {gross}')
-    logger.info(f'Numbers found in Gross: {nums_found}')
+    logger.debug(f'Alphanumeric Gross: {gross_string}')
+    logger.debug(f'Numbers found in Gross: {nums_in_gross}')
 
     try:
-        magnitude = Decimal(w2n.word_to_num(gross))
+        magnitude = Decimal(w2n.word_to_num(gross_string))
     except ValueError as e:
         logger.warning(e)
         magnitude = Decimal(1)
         pass
 
-    gross_num = Decimal(nums_found[0])
+    gross_num = Decimal(nums_in_gross[0])
     logger.debug(f'Gross digits {gross_num}')
     logger.debug(f'Gross magnitude: {magnitude}')
 
+    gross = None
     if not magnitude == gross_num:
-        return int(gross_num * magnitude)
+        gross = int(gross_num * magnitude)
     else:
-        return int(gross_num)
+        gross = int(gross_num)
+
+    logger.debug(f'Gross income: {gross}')
+    return gross
 
 
-def remove_paren_brack(s):
-    s = re.sub(r'\([^)]*\)', '', s)
-    s = re.sub(r'\[[^)]*\]', '', s)
-    return s
+def remove_paren_brack(string):
+    """
+    Remove parentheses and bracket content in s
+    :param string: String to be parsed
+    :return: Parsed string with parentheses and bracket content removed
+    """
+    string = re.sub(r'\([^)]*\)', '', string)
+    string = re.sub(r'\[[^)]*\]', '', string)
+    return string
 
 
-def remove_non_alphanum(s):
+def remove_non_alphanum(string):
     """
     Remove all non-alphanumeric characters and non-float numbers
-    :param s: The string to be parsed
+    :param string: The string to be parsed
     :return: Alphanumeric represenation of the input string
     """
-    ret = re.sub(r'[^\w\s(?<!\d)\.(?<!\d)]', '', s)
+    logger.info(f'Removing non-alphanumeric characters')
+    ret = re.sub(r'[^\w\s(?<!\d)\.(?<!\d)]', '', string)
 
     return ret
 
@@ -419,6 +472,7 @@ def open_url(url):
     """
     raw_page = None
 
+    logger.info(f'Accessing {url}')
     try:
         raw_page = urlopen(url)
     except HTTPError as e:
