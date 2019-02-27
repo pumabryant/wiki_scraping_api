@@ -74,7 +74,7 @@ class Scraper:
                 break
 
             # Slow web-scraper down
-            self.slow_scrape()
+            self.slow_record_scrape()
 
             # Try to get the raw web-page from the url
             # if error raise then continue to next url
@@ -91,6 +91,13 @@ class Scraper:
                 continue
 
     def scrape_handler(self, group, soup, url):
+        """
+        Determine which url of type of group to scrape next
+        :param group: The current type of group of the current url to be scraped
+        :param soup: The raw html representation of the Wikipedia page
+        :param url: The current url we are accessing
+        :return: The next url of type of group to scrape next
+        """
         if group is ACTOR:
             self.scrape_actor(soup, url)
             url, group = (self.movie_queue.get(), MOVIE) if not self.movie_queue.empty() \
@@ -103,6 +110,10 @@ class Scraper:
         return group, url
 
     def scrape_all_actors(self):
+        """
+        Scrape all the actor Wikipedia pages linked from a movie's Wikipedia page
+        :return: None
+        """
         while not self.actor_queue.empty():
             url = self.actor_queue.get()
 
@@ -114,6 +125,12 @@ class Scraper:
                 self.scrape_actor(soup, url)
 
     def get_any_url(self, group):
+        """
+        If the url supplied to the scraper is not valid,
+        obtain any movie or actor url
+        :param group: The type of group of the url
+        :return: Url to a movie or actor Wikipedia page, the type of group of the url
+        """
         logger.info(f'Exception occurred, current group: {group}')
         logger.info(f'Movie queue size {self.movie_queue.qsize()}')
         logger.info(f'Actor queue size {self.actor_queue.qsize()}')
@@ -124,7 +141,11 @@ class Scraper:
         else:
             return None, None
 
-    def slow_scrape(self):
+    def slow_record_scrape(self):
+        """
+        Slow down the scraping and record the number of requests thus far
+        :return:
+        """
         #sleep(randint(1, 2))
         self.num_requests += 1
         elapsed_time = time() - self.start_time
@@ -155,14 +176,18 @@ class Scraper:
                     else:
                         self.add_movie_edge(actor_url, gross, title)
 
-    def add_movie_edge(self, actor_url, gross, title):
-        actor = self.actor_urls[actor_url]
-        logger.info(f'Adding an edge between movie:{title} and actor:{actor}')
-        actor_age = self.graph.get_vertex(actor).get_value1()
-        weight = int(gross / actor_age)
-        self.graph.add_edge(title, actor, weight)
+
 
     def add_movie(self, actor_urls, gross, title, url, year):
+        """
+        Add a movie vertex into the graph
+        :param actor_urls: The urls to an actor's Wikipedia page
+        :param gross: The gross income of the given movie
+        :param title: The title of the given movie
+        :param url: The url to the movie's Wikipedia page
+        :param year: The year the movie releases
+        :return: None
+        """
         # Add the movie into our graph if the graph doesn't already store it
         # and if we are able to find urls to the cast's Wikipedia pages
         if title not in self.graph.get_vertices() and actor_urls:
@@ -171,10 +196,24 @@ class Scraper:
             self.graph.add_vertex(MOVIE, title, gross, year)
             self.num_movies += 1
 
+    def add_movie_edge(self, actor_url, gross, title):
+        """
+         Add an edge between a movie vertex and an actor vertex
+        :param actor_url: The url to an actor's Wikipedia page
+        :param gross: The gross income of the given movie
+        :param title: The title of the given movie
+        :return:
+        """
+        actor = self.actor_urls[actor_url]
+        logger.info(f'Adding an edge between movie:{title} and actor:{actor}')
+        actor_age = self.graph.get_vertex(actor).get_value1()
+        weight = int(gross / actor_age)
+        self.graph.add_edge(title, actor, weight)
+
     def scrape_actor(self, soup, url):
         """
         Obtain the age and name from actor's web-page
-        :param soup: The web-page to scrape
+        :param soup: The raw html representation of the Wikipedia page
         :param url: The url of the web-page
         :return: None
         """
@@ -197,6 +236,14 @@ class Scraper:
                         self.add_actor_edge(age, movie_url, name)
 
     def add_actor(self, age, movie_urls, name, url):
+        """
+        Add an actor vertex into the graph
+        :param age: The age of the given actor
+        :param movie_urls: The urls to a movie's Wikipedia page
+        :param name: The name of the given actor
+        :param url: The url to the actor's Wikipedia page
+        :return: None
+        """
         if name not in self.graph.get_vertices() and movie_urls:
             # Store the url with the name of the actor it links to
             self.actor_urls[url] = name
@@ -204,6 +251,13 @@ class Scraper:
             self.num_actors += 1
 
     def add_actor_edge(self, age, movie_url, name):
+        """
+        Add an edge between an actor vertex and movie vertex
+        :param age: The age of the given actor
+        :param movie_url: The url to a movie's Wikipedia page
+        :param name: The name of the given actor
+        :return: None
+        """
         movie = self.movie_urls[movie_url]
         movie_gross = self.graph.get_vertex(movie).get_value1()
         weight = int(movie_gross / age)
@@ -379,7 +433,6 @@ def get_actor_urls(soup):
         if p.name != 'th':
             continue
         ns = p.nextSibling
-        logger.info(f'{ns}')
         if not ns or ns.name not in ['td']:
             continue
         links = ns.findAll('a')
@@ -456,7 +509,7 @@ def remove_non_alphanum(string):
     """
     Remove all non-alphanumeric characters and non-float numbers
     :param string: The string to be parsed
-    :return: Alphanumeric represenation of the input string
+    :return: Alphanumeric representation of the input string
     """
     logger.info(f'Removing non-alphanumeric characters')
     ret = re.sub(r'[^\w\s(?<!\d)\.(?<!\d)]', '', string)

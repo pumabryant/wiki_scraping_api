@@ -29,5 +29,5 @@ def load_query():
     print(f'Top Grossing Actors: {query.get_top_actors()}')
 
 
-#main()
+main()
 load_query()
