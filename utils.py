@@ -1,6 +1,5 @@
 import logging.config
 
-from vertex import Vertex
 import jsonpickle
 import yaml
 
@@ -24,7 +23,8 @@ def save(filename, obj):
         logger.warning("Invalid filename")
         return
 
-    data = jsonpickle.encode(obj, keys=True)
+    jsonpickle.set_encoder_options('json', indent=4)
+    data = jsonpickle.encode(obj)
     with open(filename, 'w+') as save_file:
         print(data, file=save_file)
 

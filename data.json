@@ -1,1 +1,4367 @@
-{"py/object": "graph.Graph", "numVertices": 26, "vertices": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": [{"py/tuple": ["Morgan Freeman", {"py/object": "vertex.Vertex", "group": "Actor", "key": "Morgan Freeman", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": [{"py/tuple": [{"py/object": "vertex.Vertex", "group": "Movie", "key": "Brubaker", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": [{"py/tuple": [{"py/id": 2}, 1]}, {"py/tuple": [{"py/object": "vertex.Vertex", "group": "Actor", "key": "Matt Clark (actor)", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": [{"py/tuple": [{"py/id": 4}, 1]}]}]}, "value": "82"}, 1]}]}]}, "value": "$37,121,708[3]"}, 1]}, {"py/tuple": [{"py/object": "vertex.Vertex", "group": "Movie", "key": "Robin Hood: Prince of Thieves", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": [{"py/tuple": [{"py/id": 2}, 1]}]}]}, "value": "$390.5 million[4]"}, 1]}, {"py/tuple": [{"py/object": "vertex.Vertex", "group": "Movie", "key": "Unforgiven", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": [{"py/tuple": [{"py/id": 2}, 1]}]}]}, "value": "$159.2 million[2]"}, 1]}, {"py/tuple": [{"py/object": "vertex.Vertex", "group": "Movie", "key": "Outbreak (film)", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": [{"py/tuple": [{"py/id": 2}, 1]}]}]}, "value": "$189.8 million"}, 1]}, {"py/tuple": [{"py/object": "vertex.Vertex", "group": "Movie", "key": "Seven (1995 film)", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": [{"py/tuple": [{"py/id": 2}, 1]}]}]}, "value": "$327.3 million[2]"}, 1]}, {"py/tuple": [{"py/object": "vertex.Vertex", "group": "Movie", "key": "Amistad (film)", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": [{"py/tuple": [{"py/id": 2}, 1]}]}]}, "value": "$44.2 million"}, 1]}]}]}, "value": "81"}]}, {"py/tuple": ["Brubaker", {"py/id": 4}]}, {"py/tuple": ["Robert Redford", {"py/object": "vertex.Vertex", "group": "Actor", "key": "Robert Redford", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "82"}]}, {"py/tuple": ["Marie (film)", {"py/object": "vertex.Vertex", "group": "Movie", "key": "Marie (film)", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "$14.2 million[1]"}]}, {"py/tuple": ["Yaphet Kotto", {"py/object": "vertex.Vertex", "group": "Actor", "key": "Yaphet Kotto", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "79"}]}, {"py/tuple": ["That Was Then... This Is Now", {"py/object": "vertex.Vertex", "group": "Movie", "key": "That Was Then... This Is Now", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "$8,630,068 (USA)[2]"}]}, {"py/tuple": ["Jane Alexander", {"py/object": "vertex.Vertex", "group": "Actor", "key": "Jane Alexander", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "79"}]}, {"py/tuple": ["Street Smart (film)", {"py/object": "vertex.Vertex", "group": "Movie", "key": "Street Smart (film)", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "$1,119,112"}]}, {"py/tuple": ["Glory (1989 film)", {"py/object": "vertex.Vertex", "group": "Movie", "key": "Glory (1989 film)", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "$26.8 million[2]"}]}, {"py/tuple": ["David Keith", {"py/object": "vertex.Vertex", "group": "Actor", "key": "David Keith", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "64"}]}, {"py/tuple": ["Driving Miss Daisy", {"py/object": "vertex.Vertex", "group": "Movie", "key": "Driving Miss Daisy", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "$145.8\u00a0million[2]"}]}, {"py/tuple": ["Matt Clark (actor)", {"py/id": 6}]}, {"py/tuple": ["Lean on Me (film)", {"py/object": "vertex.Vertex", "group": "Movie", "key": "Lean on Me (film)", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "$31 million"}]}, {"py/tuple": ["Johnny Handsome", {"py/object": "vertex.Vertex", "group": "Movie", "key": "Johnny Handsome", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "$7,237,794 334,941 admissions (France)[2]"}]}, {"py/tuple": ["Robin Hood: Prince of Thieves", {"py/id": 8}]}, {"py/tuple": ["M. Emmet Walsh", {"py/object": "vertex.Vertex", "group": "Actor", "key": "M. Emmet Walsh", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "83"}]}, {"py/tuple": ["Unforgiven", {"py/id": 10}]}, {"py/tuple": ["The Shawshank Redemption", {"py/object": "vertex.Vertex", "group": "Movie", "key": "The Shawshank Redemption", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "$58.3 million[3]"}]}, {"py/tuple": ["Linda Haynes", {"py/object": "vertex.Vertex", "group": "Actor", "key": "Linda Haynes", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "71"}]}, {"py/tuple": ["Outbreak (film)", {"py/id": 12}]}, {"py/tuple": ["Everett McGill", {"py/object": "vertex.Vertex", "group": "Actor", "key": "Everett McGill", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "73"}]}, {"py/tuple": ["Seven (1995 film)", {"py/id": 14}]}, {"py/tuple": ["Chain Reaction (1996 film)", {"py/object": "vertex.Vertex", "group": "Movie", "key": "Chain Reaction (1996 film)", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "$60,209,334"}]}, {"py/tuple": ["Moll Flanders (1996 film)", {"py/object": "vertex.Vertex", "group": "Movie", "key": "Moll Flanders (1996 film)", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "$3,486,957"}]}, {"py/tuple": ["Amistad (film)", {"py/id": 16}]}, {"py/tuple": ["Wilford Brimley", {"py/object": "vertex.Vertex", "group": "Actor", "key": "Wilford Brimley", "neighbors": {"py/reduce": [{"py/type": "collections.OrderedDict"}, {"py/tuple": []}, null, null, {"py/tuple": []}]}, "value": "84"}]}]}]}}
+{
+    "py/object": "graph.Graph",
+    "vertices": {
+        "'night, Mother (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "'night, Mother (film)",
+            "neighbors": {
+                "Sissy Spacek": 6403
+            },
+            "value1": 441863,
+            "value2": 1986
+        },
+        "10 Items or Less (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "10 Items or Less (film)",
+            "neighbors": {
+                "Morgan Freeman": 17274
+            },
+            "value1": 1399222,
+            "value2": 2006
+        },
+        "4 for Texas": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "4 for Texas",
+            "neighbors": {},
+            "value1": 1367490,
+            "value2": 1963
+        },
+        "5 Card Stud": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "5 Card Stud",
+            "neighbors": {},
+            "value1": 3500000,
+            "value2": 1968
+        },
+        "5 Flights Up": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "5 Flights Up",
+            "neighbors": {
+                "Diane Keaton": 27397
+            },
+            "value1": 2000000,
+            "value2": 2014
+        },
+        "A Family Thing": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "A Family Thing",
+            "neighbors": {},
+            "value1": 10125417,
+            "value2": 1996
+        },
+        "Aaron Eckhart": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Aaron Eckhart",
+            "neighbors": {
+                "London Has Fallen": 4116000,
+                "Nurse Betty": 588000,
+                "Olympus Has Fallen": 3406000,
+                "The Dark Knight (film)": 20100000
+            },
+            "value1": 50,
+            "value2": -1
+        },
+        "Across 110th Street": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Across 110th Street",
+            "neighbors": {
+                "Yaphet Kotto": 126582
+            },
+            "value1": 10000000,
+            "value2": 1972
+        },
+        "Affliction (1997 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Affliction (1997 film)",
+            "neighbors": {
+                "Mary Beth Hurt": 87917,
+                "Nick Nolte": 81154,
+                "Sissy Spacek": 91739,
+                "Willem Dafoe": 100477
+            },
+            "value1": 6330054,
+            "value2": 1997
+        },
+        "Aidan Quinn": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Aidan Quinn",
+            "neighbors": {
+                "Nine Lives (2005 film)": 26490
+            },
+            "value1": 59,
+            "value2": -1
+        },
+        "Alan Cumming": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Alan Cumming",
+            "neighbors": {},
+            "value1": 54,
+            "value2": -1
+        },
+        "Aleksander Krupa": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Aleksander Krupa",
+            "neighbors": {
+                "Behind Enemy Lines (2001 film)": 1295774
+            },
+            "value1": 71,
+            "value2": -1
+        },
+        "Alexis Bledel": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Alexis Bledel",
+            "neighbors": {
+                "Tuck Everlasting (2002 film)": 521621
+            },
+            "value1": 37,
+            "value2": -1
+        },
+        "Alicia Silverstone": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Alicia Silverstone",
+            "neighbors": {
+                "Blast from the Past (film)": 959523
+            },
+            "value1": 42,
+            "value2": -1
+        },
+        "Alien (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Alien (film)",
+            "neighbors": {
+                "Sigourney Weaver": 1520584,
+                "Veronica Cartwright": 1520584,
+                "Yaphet Kotto": 1328105
+            },
+            "value1": 104920300,
+            "value2": 1979
+        },
+        "Alison Brie": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Alison Brie",
+            "neighbors": {
+                "The Lego Movie": 13030555
+            },
+            "value1": 36,
+            "value2": -1
+        },
+        "All Saints (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "All Saints (film)",
+            "neighbors": {
+                "Barry Corbin": 75641,
+                "David Keith": 92187,
+                "John Corbett": 103508
+            },
+            "value1": 5900000,
+            "value2": 2017
+        },
+        "Allison Janney": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Allison Janney",
+            "neighbors": {
+                "Nurse Betty": 498305,
+                "The Help (film)": 3671186
+            },
+            "value1": 59,
+            "value2": -1
+        },
+        "Along Came a Spider (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Along Came a Spider (film)",
+            "neighbors": {
+                "Dylan Baker": 1783050,
+                "Michael Moriarty": 1366233,
+                "Michael Wincott": 1724590,
+                "Monica Potter": 2238297,
+                "Morgan Freeman": 1298765,
+                "Penelope Ann Miller": 1912727
+            },
+            "value1": 105200000,
+            "value2": 2001
+        },
+        "Amanda Seyfried": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Amanda Seyfried",
+            "neighbors": {
+                "Nine Lives (2005 film)": 47361,
+                "Ted 2": 6566666
+            },
+            "value1": 33,
+            "value2": -1
+        },
+        "Amistad (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Amistad (film)",
+            "neighbors": {
+                "Morgan Freeman": 545679,
+                "Stellan Skarsg\u00e5rd": 659701
+            },
+            "value1": 44200000,
+            "value2": 1997
+        },
+        "Amy Brenneman": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Amy Brenneman",
+            "neighbors": {
+                "Nine Lives (2005 film)": 28943
+            },
+            "value1": 54,
+            "value2": -1
+        },
+        "Amy Irving": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Amy Irving",
+            "neighbors": {
+                "Carrie (1976 film)": 520000,
+                "Tuck Everlasting (2002 film)": 296923
+            },
+            "value1": 65,
+            "value2": -1
+        },
+        "Amy Madigan": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Amy Madigan",
+            "neighbors": {},
+            "value1": 68,
+            "value2": -1
+        },
+        "Amy Ryan": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Amy Ryan",
+            "neighbors": {},
+            "value1": 49,
+            "value2": -1
+        },
+        "An American Haunting": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "An American Haunting",
+            "neighbors": {
+                "Rachel Hurd-Wood": 1057576,
+                "Sissy Spacek": 429161
+            },
+            "value1": 29612137,
+            "value2": 2005
+        },
+        "An Officer and a Gentleman": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "An Officer and a Gentleman",
+            "neighbors": {
+                "David Keith": 2046875,
+                "Debra Winger": 2079365,
+                "Louis Gossett Jr.": 1597560,
+                "Richard Gere": 1898550
+            },
+            "value1": 131000000,
+            "value2": 1982
+        },
+        "An Unfinished Life": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "An Unfinished Life",
+            "neighbors": {
+                "Morgan Freeman": 229629
+            },
+            "value1": 18600000,
+            "value2": 2005
+        },
+        "Andrea Riseborough": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Andrea Riseborough",
+            "neighbors": {
+                "Oblivion (2013 film)": 7735135
+            },
+            "value1": 37,
+            "value2": -1
+        },
+        "Angel Tompkins": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Angel Tompkins",
+            "neighbors": {
+                "Prime Cut": 19736
+            },
+            "value1": 76,
+            "value2": -1
+        },
+        "Ann-Margret": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Ann-Margret",
+            "neighbors": {
+                "Going in Style (2017 film)": 1102597
+            },
+            "value1": 77,
+            "value2": -1
+        },
+        "Anthony Zerbe": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Anthony Zerbe",
+            "neighbors": {
+                "The Liberation of L.B. Jones": 15853
+            },
+            "value1": 82,
+            "value2": -1
+        },
+        "Arnold Schwarzenegger": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Arnold Schwarzenegger",
+            "neighbors": {
+                "The Running Man (1987 film)": 536619
+            },
+            "value1": 71,
+            "value2": -1
+        },
+        "Ashley Judd": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Ashley Judd",
+            "neighbors": {
+                "Dolphin Tale": 1918000,
+                "Dolphin Tale 2": 1156000,
+                "High Crimes": 1276000,
+                "Olympus Has Fallen": 3406000
+            },
+            "value1": 50,
+            "value2": -1
+        },
+        "Aunjanue Ellis": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Aunjanue Ellis",
+            "neighbors": {
+                "Men of Honor": 1680479
+            },
+            "value1": 49,
+            "value2": -1
+        },
+        "Back Roads (1981 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Back Roads (1981 film)",
+            "neighbors": {
+                "Tommy Lee Jones": 163888
+            },
+            "value1": 11800000,
+            "value2": 1981
+        },
+        "Barbara Babcock": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Barbara Babcock",
+            "neighbors": {
+                "That Was Then... This Is Now": 106544
+            },
+            "value1": 81,
+            "value2": -1
+        },
+        "Barbara Hershey": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Barbara Hershey",
+            "neighbors": {
+                "Take This Job and Shove It (film)": 247451,
+                "The Liberation of L.B. Jones": 18309
+            },
+            "value1": 71,
+            "value2": -1
+        },
+        "Barry Corbin": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Barry Corbin",
+            "neighbors": {
+                "All Saints (film)": 75641
+            },
+            "value1": 78,
+            "value2": -1
+        },
+        "Batman Begins": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Batman Begins",
+            "neighbors": {
+                "Michael Caine": 4414117,
+                "Morgan Freeman": 4632098,
+                "Tom Wilkinson": 5284507
+            },
+            "value1": 375200000,
+            "value2": 2005
+        },
+        "Behind Enemy Lines (2001 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Behind Enemy Lines (2001 film)",
+            "neighbors": {
+                "Aleksander Krupa": 1295774,
+                "David Keith": 1437500,
+                "Owen Wilson": 1840000
+            },
+            "value1": 92000000,
+            "value2": 2001
+        },
+        "Bette Midler": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Bette Midler",
+            "neighbors": {},
+            "value1": 73,
+            "value2": -1
+        },
+        "Betty Buckley": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Betty Buckley",
+            "neighbors": {
+                "Carrie (1976 film)": 476056
+            },
+            "value1": 71,
+            "value2": -1
+        },
+        "Beverly D'Angelo": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Beverly D'Angelo",
+            "neighbors": {
+                "Coal Miner's Daughter (film)": 1002686
+            },
+            "value1": 67,
+            "value2": -1
+        },
+        "Bill Cobbs": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Bill Cobbs",
+            "neighbors": {
+                "Get Low (film)": 115476
+            },
+            "value1": 84,
+            "value2": -1
+        },
+        "Bill Murray": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Bill Murray",
+            "neighbors": {
+                "Get Low (film)": 142647
+            },
+            "value1": 68,
+            "value2": -1
+        },
+        "Blast from the Past (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Blast from the Past (film)",
+            "neighbors": {
+                "Alicia Silverstone": 959523,
+                "Brendan Fraser": 806000,
+                "Sissy Spacek": 584057
+            },
+            "value1": 40300000,
+            "value2": 1999
+        },
+        "Blythe Danner": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Blythe Danner",
+            "neighbors": {
+                "The Great Santini": 61842
+            },
+            "value1": 76,
+            "value2": -1
+        },
+        "Bob Gunton": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Bob Gunton",
+            "neighbors": {
+                "Glory (1989 film)": 367123,
+                "The Shawshank Redemption": 798630
+            },
+            "value1": 73,
+            "value2": -1
+        },
+        "Bonnie Bedelia": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Bonnie Bedelia",
+            "neighbors": {
+                "Violets Are Blue (film)": 67761
+            },
+            "value1": 70,
+            "value2": -1
+        },
+        "Brad Pitt": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Brad Pitt",
+            "neighbors": {
+                "Seven (1995 film)": 5950909
+            },
+            "value1": 55,
+            "value2": -1
+        },
+        "Brendan Fraser": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Brendan Fraser",
+            "neighbors": {
+                "Blast from the Past (film)": 806000
+            },
+            "value1": 50,
+            "value2": -1
+        },
+        "Bridget Moynahan": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Bridget Moynahan",
+            "neighbors": {
+                "Gray Matters (2006 film)": 20095,
+                "The Sum of All Fears (film)": 4125531
+            },
+            "value1": 47,
+            "value2": -1
+        },
+        "Brubaker": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Brubaker",
+            "neighbors": {
+                "David Keith": 580026,
+                "Yaphet Kotto": 469895
+            },
+            "value1": 37121708,
+            "value2": 1980
+        },
+        "Bruce Almighty": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Bruce Almighty",
+            "neighbors": {
+                "Jim Carrey": 8501754,
+                "Lisa Ann Walter": 8810909,
+                "Morgan Freeman": 5982716,
+                "Philip Baker Hall": 5570114,
+                "Steve Carell": 8653571
+            },
+            "value1": 484600000,
+            "value2": 2003
+        },
+        "Bruce McGill": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Bruce McGill",
+            "neighbors": {
+                "The Sum of All Fears (film)": 2851470
+            },
+            "value1": 68,
+            "value2": -1
+        },
+        "Bruce Willis": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Bruce Willis",
+            "neighbors": {
+                "Lucky Number Slevin": 893650,
+                "Red (2010 film)": 3158730
+            },
+            "value1": 63,
+            "value2": -1
+        },
+        "Bryce Dallas Howard": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Bryce Dallas Howard",
+            "neighbors": {
+                "The Help (film)": 5854054
+            },
+            "value1": 37,
+            "value2": -1
+        },
+        "Carrie (1976 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Carrie (1976 film)",
+            "neighbors": {
+                "Amy Irving": 520000,
+                "Betty Buckley": 476056,
+                "Nancy Allen (actress)": 497058,
+                "Piper Laurie": 388505,
+                "Sissy Spacek": 489855
+            },
+            "value1": 33800000,
+            "value2": 1976
+        },
+        "Cary Elwes": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Cary Elwes",
+            "neighbors": {
+                "Glory (1989 film)": 478571,
+                "Kiss the Girls (1997 film)": 1080357
+            },
+            "value1": 56,
+            "value2": -1
+        },
+        "Casey Affleck": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Casey Affleck",
+            "neighbors": {
+                "The Old Man & the Gun": 369767
+            },
+            "value1": 43,
+            "value2": -1
+        },
+        "Chain Reaction (1996 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Chain Reaction (1996 film)",
+            "neighbors": {
+                "Kevin Dunn": 971118,
+                "Morgan Freeman": 743325,
+                "Rachel Weisz": 1254361
+            },
+            "value1": 60209334,
+            "value2": 1996
+        },
+        "Charlie Day": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Charlie Day",
+            "neighbors": {
+                "The Lego Movie": 10909302
+            },
+            "value1": 43,
+            "value2": -1
+        },
+        "Charlie Hunnam": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Charlie Hunnam",
+            "neighbors": {
+                "Deadfall (2012 film)": 50000
+            },
+            "value1": 38,
+            "value2": -1
+        },
+        "Charlie Sheen": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Charlie Sheen",
+            "neighbors": {
+                "Major League II": 577852
+            },
+            "value1": 53,
+            "value2": -1
+        },
+        "Choi Min-sik": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Choi Min-sik",
+            "neighbors": {
+                "Lucy (2014 film)": 8275000
+            },
+            "value1": 56,
+            "value2": -1
+        },
+        "Chris Pratt": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Chris Pratt",
+            "neighbors": {
+                "The Lego Movie": 12028205,
+                "Wanted (2008 film)": 8753846
+            },
+            "value1": 39,
+            "value2": -1
+        },
+        "Christian Slater": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Christian Slater",
+            "neighbors": {
+                "Robin Hood: Prince of Thieves": 7969387
+            },
+            "value1": 49,
+            "value2": -1
+        },
+        "Christina Ricci": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Christina Ricci",
+            "neighbors": {
+                "Gold Diggers: The Secret of Bear Mountain": 154592
+            },
+            "value1": 39,
+            "value2": -1
+        },
+        "Christopher Lloyd": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Christopher Lloyd",
+            "neighbors": {
+                "Going in Style (2017 film)": 1061250
+            },
+            "value1": 80,
+            "value2": -1
+        },
+        "Clancy Brown": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Clancy Brown",
+            "neighbors": {
+                "The Shawshank Redemption": 971666
+            },
+            "value1": 60,
+            "value2": -1
+        },
+        "Coal Miner's Daughter (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Coal Miner's Daughter (film)",
+            "neighbors": {
+                "Beverly D'Angelo": 1002686,
+                "Sissy Spacek": 973623,
+                "Tommy Lee Jones": 933055
+            },
+            "value1": 67180000,
+            "value2": 1980
+        },
+        "Colin Farrell": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Colin Farrell",
+            "neighbors": {
+                "Daredevil (film)": 4266666
+            },
+            "value1": 42,
+            "value2": -1
+        },
+        "Common (rapper)": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Common (rapper)",
+            "neighbors": {
+                "Wanted (2008 film)": 7421739
+            },
+            "value1": 46,
+            "value2": -1
+        },
+        "Corbin Bernsen": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Corbin Bernsen",
+            "neighbors": {
+                "Major League II": 478534
+            },
+            "value1": 64,
+            "value2": -1
+        },
+        "Crimes of the Heart (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Crimes of the Heart (film)",
+            "neighbors": {
+                "Diane Keaton": 313774273972,
+                "Sissy Spacek": 331964086956,
+                "Tess Harper": 336845911764
+            },
+            "value1": 22905522000000,
+            "value2": 1986
+        },
+        "Crispin Glover": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Crispin Glover",
+            "neighbors": {
+                "Nurse Betty": 544444
+            },
+            "value1": 54,
+            "value2": -1
+        },
+        "Dakota Fanning": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Dakota Fanning",
+            "neighbors": {
+                "Nine Lives (2005 film)": 62516
+            },
+            "value1": 25,
+            "value2": -1
+        },
+        "Dan Aykroyd": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Dan Aykroyd",
+            "neighbors": {
+                "Driving Miss Daisy": 2209090
+            },
+            "value1": 66,
+            "value2": -1
+        },
+        "Danny Aiello": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Danny Aiello",
+            "neighbors": {
+                "Lucky Number Slevin": 662352,
+                "The Purple Rose of Cairo": 125074
+            },
+            "value1": 85,
+            "value2": -1
+        },
+        "Danny Glover": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Danny Glover",
+            "neighbors": {},
+            "value1": 69,
+            "value2": -1
+        },
+        "Daredevil (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Daredevil (film)",
+            "neighbors": {
+                "Colin Farrell": 4266666,
+                "David Keith": 2800000,
+                "Jennifer Garner": 3895652,
+                "Joe Pantoliano": 2674626
+            },
+            "value1": 179200000,
+            "value2": 2003
+        },
+        "Dave Franco": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Dave Franco",
+            "neighbors": {
+                "Now You See Me (film)": 10657575,
+                "Now You See Me 2": 10148484
+            },
+            "value1": 33,
+            "value2": -1
+        },
+        "David Keith": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "David Keith",
+            "neighbors": {
+                "All Saints (film)": 92187,
+                "An Officer and a Gentleman": 2046875,
+                "Behind Enemy Lines (2001 film)": 1437500,
+                "Brubaker": 580026,
+                "Daredevil (film)": 2800000,
+                "Firestarter (film)": 267187,
+                "Gold Diggers: The Secret of Bear Mountain": 94204,
+                "Hangman's Curse (film)": 2631,
+                "Independence Day (1983 film)": 2366,
+                "Major League II": 478534,
+                "Men of Honor": 1286617,
+                "Raise Your Voice": 231250,
+                "Raw Justice": 550853,
+                "Take This Job and Shove It (film)": 274516,
+                "The Indian in the Cupboard (film)": 557812,
+                "The Lords of Discipline (film)": 184173,
+                "The Two Jakes": 156250
+            },
+            "value1": 64,
+            "value2": -1
+        },
+        "David Paymer": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "David Paymer",
+            "neighbors": {},
+            "value1": 64,
+            "value2": -1
+        },
+        "David Warner (actor)": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "David Warner (actor)",
+            "neighbors": {
+                "The Man with Two Brains": 134460
+            },
+            "value1": 77,
+            "value2": -1
+        },
+        "Deadfall (2012 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Deadfall (2012 film)",
+            "neighbors": {
+                "Charlie Hunnam": 50000,
+                "Eric Bana": 38000,
+                "Kate Mara": 54285,
+                "Kris Kristofferson": 23170,
+                "Olivia Wilde": 55882,
+                "Sissy Spacek": 27536,
+                "Treat Williams": 28358
+            },
+            "value1": 1900000,
+            "value2": 2012
+        },
+        "Debra Winger": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Debra Winger",
+            "neighbors": {
+                "An Officer and a Gentleman": 2079365,
+                "Terms of Endearment": 1720634
+            },
+            "value1": 63,
+            "value2": -1
+        },
+        "Deep Impact (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Deep Impact (film)",
+            "neighbors": {
+                "Morgan Freeman": 4314814,
+                "T\u00e9a Leoni": 6721153
+            },
+            "value1": 349500000,
+            "value2": 1998
+        },
+        "Dennis Haysbert": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Dennis Haysbert",
+            "neighbors": {
+                "Major League II": 478534,
+                "Ted 2": 3385937
+            },
+            "value1": 64,
+            "value2": -1
+        },
+        "Diana Scarwid": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Diana Scarwid",
+            "neighbors": {
+                "Gold Diggers: The Secret of Bear Mountain": 95699
+            },
+            "value1": 63,
+            "value2": -1
+        },
+        "Diane Keaton": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Diane Keaton",
+            "neighbors": {
+                "5 Flights Up": 27397,
+                "Crimes of the Heart (film)": 313774273972
+            },
+            "value1": 73,
+            "value2": -1
+        },
+        "Dianne Wiest": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Dianne Wiest",
+            "neighbors": {
+                "Independence Day (1983 film)": 2103
+            },
+            "value1": 72,
+            "value2": -1
+        },
+        "Djimon Hounsou": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Djimon Hounsou",
+            "neighbors": {},
+            "value1": 54,
+            "value2": -1
+        },
+        "Dolphin Tale": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Dolphin Tale",
+            "neighbors": {
+                "Ashley Judd": 1918000,
+                "Morgan Freeman": 1183950
+            },
+            "value1": 95900000,
+            "value2": 2011
+        },
+        "Dolphin Tale 2": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Dolphin Tale 2",
+            "neighbors": {
+                "Ashley Judd": 1156000,
+                "Harry Connick Jr.": 1133333,
+                "Kris Kristofferson": 704878,
+                "Morgan Freeman": 713580
+            },
+            "value1": 57800000,
+            "value2": 2014
+        },
+        "Drea de Matteo": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Drea de Matteo",
+            "neighbors": {
+                "Lake City (film)": 269
+            },
+            "value1": 47,
+            "value2": -1
+        },
+        "Driving Miss Daisy": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Driving Miss Daisy",
+            "neighbors": {
+                "Dan Aykroyd": 2209090,
+                "Morgan Freeman": 1800000,
+                "Patti LuPone": 2113043
+            },
+            "value1": 145800000,
+            "value2": 1989
+        },
+        "Dwight Schultz": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Dwight Schultz",
+            "neighbors": {
+                "The Long Walk Home": 67648
+            },
+            "value1": 71,
+            "value2": -1
+        },
+        "Dwight Yoakam": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Dwight Yoakam",
+            "neighbors": {
+                "Four Christmases": 2640322
+            },
+            "value1": 62,
+            "value2": -1
+        },
+        "Dylan Baker": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Dylan Baker",
+            "neighbors": {
+                "Along Came a Spider (film)": 1783050,
+                "The Long Walk Home": 81407
+            },
+            "value1": 59,
+            "value2": -1
+        },
+        "Dylan McDermott": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Dylan McDermott",
+            "neighbors": {
+                "Olympus Has Fallen": 2987719
+            },
+            "value1": 57,
+            "value2": -1
+        },
+        "Edward Furlong": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Edward Furlong",
+            "neighbors": {
+                "The Grass Harp (film)": 13650
+            },
+            "value1": 41,
+            "value2": -1
+        },
+        "Elizabeth Ashley": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Elizabeth Ashley",
+            "neighbors": {
+                "Just Getting Started (film)": 96202
+            },
+            "value1": 79,
+            "value2": -1
+        },
+        "Elizabeth Banks": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Elizabeth Banks",
+            "neighbors": {
+                "The Lego Movie": 10424444
+            },
+            "value1": 45,
+            "value2": -1
+        },
+        "Elizabeth McGovern": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Elizabeth McGovern",
+            "neighbors": {
+                "Johnny Handsome": 126978,
+                "Ragtime (film)": 194721368421
+            },
+            "value1": 57,
+            "value2": -1
+        },
+        "Elizabeth Perkins": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Elizabeth Perkins",
+            "neighbors": {
+                "The Ring Two": 2784482
+            },
+            "value1": 58,
+            "value2": -1
+        },
+        "Ellen Barkin": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Ellen Barkin",
+            "neighbors": {
+                "Johnny Handsome": 113090
+            },
+            "value1": 64,
+            "value2": -1
+        },
+        "Emma Fuhrmann": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Emma Fuhrmann",
+            "neighbors": {
+                "The Magic of Belle Isle": 6022
+            },
+            "value1": 17,
+            "value2": -1
+        },
+        "Eric Bana": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Eric Bana",
+            "neighbors": {
+                "Deadfall (2012 film)": 38000
+            },
+            "value1": 50,
+            "value2": -1
+        },
+        "Evan Almighty": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Evan Almighty",
+            "neighbors": {
+                "John Goodman": 2627272,
+                "John Michael Higgins": 3096428,
+                "Molly Shannon": 3211111,
+                "Morgan Freeman": 2140740,
+                "Steve Carell": 3096428
+            },
+            "value1": 173400000,
+            "value2": 2007
+        },
+        "Faye Dunaway": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Faye Dunaway",
+            "neighbors": {
+                "The Thomas Crown Affair (1968 film)": 179487
+            },
+            "value1": 78,
+            "value2": -1
+        },
+        "Fighting Back (1982 American film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Fighting Back (1982 American film)",
+            "neighbors": {
+                "Patti LuPone": 92753,
+                "Yaphet Kotto": 81012
+            },
+            "value1": 6400000,
+            "value2": 1982
+        },
+        "Firestarter (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Firestarter (film)",
+            "neighbors": {
+                "David Keith": 267187,
+                "Freddie Jones": 187912,
+                "Heather Locklear": 300000,
+                "Louise Fletcher": 203571
+            },
+            "value1": 17100000,
+            "value2": 1984
+        },
+        "Forest Whitaker": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Forest Whitaker",
+            "neighbors": {
+                "Johnny Handsome": 126978
+            },
+            "value1": 57,
+            "value2": -1
+        },
+        "Four Christmases": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Four Christmases",
+            "neighbors": {
+                "Dwight Yoakam": 2640322,
+                "Jon Voight": 2046250,
+                "Mary Steenburgen": 2480303,
+                "Reese Witherspoon": 3897619,
+                "Sissy Spacek": 2372463,
+                "Tim McGraw": 3209803,
+                "Vince Vaughn": 3410416
+            },
+            "value1": 163700000,
+            "value2": 2008
+        },
+        "Fran Drescher": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Fran Drescher",
+            "neighbors": {
+                "Ragtime (film)": 181952754098
+            },
+            "value1": 61,
+            "value2": -1
+        },
+        "Fred Willard": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Fred Willard",
+            "neighbors": {
+                "The Magic of Belle Isle": 1296
+            },
+            "value1": 79,
+            "value2": -1
+        },
+        "Freddie Jones": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Freddie Jones",
+            "neighbors": {
+                "Firestarter (film)": 187912
+            },
+            "value1": 91,
+            "value2": -1
+        },
+        "Freddy's Dead: The Final Nightmare": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Freddy's Dead: The Final Nightmare",
+            "neighbors": {
+                "Lisa Zane": 612280,
+                "Robert Englund": 491549,
+                "Yaphet Kotto": 441772
+            },
+            "value1": 34900000,
+            "value2": 1991
+        },
+        "Gary Cole": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Gary Cole",
+            "neighbors": {
+                "The Ring Two": 2604838
+            },
+            "value1": 62,
+            "value2": -1
+        },
+        "Get Low (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Get Low (film)",
+            "neighbors": {
+                "Bill Cobbs": 115476,
+                "Bill Murray": 142647,
+                "Lucas Black": 269444,
+                "Sissy Spacek": 140579
+            },
+            "value1": 9700000,
+            "value2": 2009
+        },
+        "Gil Bellows": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Gil Bellows",
+            "neighbors": {
+                "The Shawshank Redemption": 1143137
+            },
+            "value1": 51,
+            "value2": -1
+        },
+        "Giovanni Ribisi": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Giovanni Ribisi",
+            "neighbors": {
+                "Ted 2": 4925000
+            },
+            "value1": 44,
+            "value2": -1
+        },
+        "Glory (1989 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Glory (1989 film)",
+            "neighbors": {
+                "Bob Gunton": 367123,
+                "Cary Elwes": 478571,
+                "Jay O. Sanders": 412307,
+                "Matthew Broderick": 478571,
+                "Morgan Freeman": 330864
+            },
+            "value1": 26800000,
+            "value2": 1989
+        },
+        "Going in Style (2017 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Going in Style (2017 film)",
+            "neighbors": {
+                "Ann-Margret": 1102597,
+                "Christopher Lloyd": 1061250,
+                "Joey King": 4468421,
+                "Michael Caine": 998823,
+                "Morgan Freeman": 1048148
+            },
+            "value1": 84900000,
+            "value2": 2017
+        },
+        "Gold Diggers: The Secret of Bear Mountain": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Gold Diggers: The Secret of Bear Mountain",
+            "neighbors": {
+                "Christina Ricci": 154592,
+                "David Keith": 94204,
+                "Diana Scarwid": 95699
+            },
+            "value1": 6029091,
+            "value2": 1995
+        },
+        "Gone Baby Gone": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Gone Baby Gone",
+            "neighbors": {
+                "Morgan Freeman": 427160
+            },
+            "value1": 34600000,
+            "value2": 2007
+        },
+        "Gray Matters (2006 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Gray Matters (2006 film)",
+            "neighbors": {
+                "Bridget Moynahan": 20095,
+                "Heather Graham": 19275,
+                "Molly Shannon": 17490,
+                "Sissy Spacek": 13688,
+                "Tom Cavanagh": 17172
+            },
+            "value1": 944479,
+            "value2": 2006
+        },
+        "Greg Kinnear": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Greg Kinnear",
+            "neighbors": {
+                "Nurse Betty": 534545
+            },
+            "value1": 55,
+            "value2": -1
+        },
+        "Gwyneth Paltrow": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Gwyneth Paltrow",
+            "neighbors": {
+                "Seven (1995 film)": 7115217
+            },
+            "value1": 46,
+            "value2": -1
+        },
+        "Hangman's Curse (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Hangman's Curse (film)",
+            "neighbors": {
+                "David Keith": 2631,
+                "Leighton Meester": 5262
+            },
+            "value1": 168406,
+            "value2": 2003
+        },
+        "Hard Promises (1992 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Hard Promises (1992 film)",
+            "neighbors": {
+                "Sissy Spacek": 4439,
+                "William Petersen": 4641
+            },
+            "value1": 306319,
+            "value2": 1991
+        },
+        "Harry Connick Jr.": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Harry Connick Jr.",
+            "neighbors": {
+                "Dolphin Tale 2": 1133333
+            },
+            "value1": 51,
+            "value2": -1
+        },
+        "Harvey Keitel": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Harvey Keitel",
+            "neighbors": {
+                "The Two Jakes": 126582,
+                "U-571 (film)": 1607594
+            },
+            "value1": 79,
+            "value2": -1
+        },
+        "Heather Graham": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Heather Graham",
+            "neighbors": {
+                "Gray Matters (2006 film)": 19275
+            },
+            "value1": 49,
+            "value2": -1
+        },
+        "Heather Locklear": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Heather Locklear",
+            "neighbors": {
+                "Firestarter (film)": 300000
+            },
+            "value1": 57,
+            "value2": -1
+        },
+        "Helen Mirren": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Helen Mirren",
+            "neighbors": {
+                "The Nutcracker and the Four Realms": 2382191
+            },
+            "value1": 73,
+            "value2": -1
+        },
+        "High Crimes": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "High Crimes",
+            "neighbors": {
+                "Ashley Judd": 1276000,
+                "Jim Caviezel": 1276000,
+                "Morgan Freeman": 787654
+            },
+            "value1": 63800000,
+            "value2": 2002
+        },
+        "Hilary Duff": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Hilary Duff",
+            "neighbors": {
+                "Raise Your Voice": 477419
+            },
+            "value1": 31,
+            "value2": -1
+        },
+        "Hilary Swank": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Hilary Swank",
+            "neighbors": {
+                "Million Dollar Baby": 4927272
+            },
+            "value1": 44,
+            "value2": -1
+        },
+        "Holly Hunter": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Holly Hunter",
+            "neighbors": {
+                "Nine Lives (2005 film)": 26048
+            },
+            "value1": 60,
+            "value2": -1
+        },
+        "Ian McShane": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Ian McShane",
+            "neighbors": {
+                "Nine Lives (2005 film)": 20564
+            },
+            "value1": 76,
+            "value2": -1
+        },
+        "In the Bedroom": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "In the Bedroom",
+            "neighbors": {
+                "Marisa Tomei": 803703,
+                "Nick Stahl": 1112820,
+                "Sissy Spacek": 628985,
+                "Tom Wilkinson": 611267
+            },
+            "value1": 43400000,
+            "value2": 2001
+        },
+        "Independence Day (1983 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Independence Day (1983 film)",
+            "neighbors": {
+                "David Keith": 2366,
+                "Dianne Wiest": 2103,
+                "Kathleen Quinlan": 2366
+            },
+            "value1": 151462,
+            "value2": 1983
+        },
+        "Invictus (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Invictus (film)",
+            "neighbors": {
+                "Matt Damon": 2545833,
+                "Morgan Freeman": 1508641
+            },
+            "value1": 122200000,
+            "value2": 2009
+        },
+        "Isla Fisher": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Isla Fisher",
+            "neighbors": {
+                "Now You See Me (film)": 8179069
+            },
+            "value1": 43,
+            "value2": -1
+        },
+        "JFK (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "JFK (film)",
+            "neighbors": {
+                "Jay O. Sanders": 3160000,
+                "Joe Pesci": 2702631,
+                "Laurie Metcalf": 3260317,
+                "Michael Rooker": 3260317,
+                "Sissy Spacek": 2976811,
+                "Tommy Lee Jones": 2852777
+            },
+            "value1": 205400000,
+            "value2": 1991
+        },
+        "Jackie Earle Haley": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jackie Earle Haley",
+            "neighbors": {
+                "London Has Fallen": 3610526
+            },
+            "value1": 57,
+            "value2": -1
+        },
+        "Jake Weber": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jake Weber",
+            "neighbors": {
+                "U-571 (film)": 2309090
+            },
+            "value1": 55,
+            "value2": -1
+        },
+        "James McAvoy": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "James McAvoy",
+            "neighbors": {
+                "Wanted (2008 film)": 8753846
+            },
+            "value1": 39,
+            "value2": -1
+        },
+        "James Purefoy": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "James Purefoy",
+            "neighbors": {
+                "Momentum (2015 film)": 1928
+            },
+            "value1": 54,
+            "value2": -1
+        },
+        "Jane Seymour (actress)": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jane Seymour (actress)",
+            "neighbors": {
+                "Live and Let Die (film)": 2379411
+            },
+            "value1": 68,
+            "value2": -1
+        },
+        "Jason Isaacs": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jason Isaacs",
+            "neighbors": {
+                "Nine Lives (2005 film)": 28416
+            },
+            "value1": 55,
+            "value2": -1
+        },
+        "Jason Ritter": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jason Ritter",
+            "neighbors": {
+                "Raise Your Voice": 379487
+            },
+            "value1": 39,
+            "value2": -1
+        },
+        "Jay Chou": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jay Chou",
+            "neighbors": {
+                "Now You See Me 2": 8372500
+            },
+            "value1": 40,
+            "value2": -1
+        },
+        "Jay O. Sanders": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jay O. Sanders",
+            "neighbors": {
+                "Glory (1989 film)": 412307,
+                "JFK (film)": 3160000,
+                "Kiss the Girls (1997 film)": 930769
+            },
+            "value1": 65,
+            "value2": -1
+        },
+        "Jeff Daniels": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jeff Daniels",
+            "neighbors": {
+                "Marie (film)": 221875,
+                "Ragtime (film)": 173423718750,
+                "Something Wild (1986 film)": 131250,
+                "Terms of Endearment": 1693750,
+                "The Purple Rose of Cairo": 166114
+            },
+            "value1": 64,
+            "value2": -1
+        },
+        "Jeffrey DeMunn": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jeffrey DeMunn",
+            "neighbors": {
+                "Ragtime (film)": 156325605633,
+                "The Shawshank Redemption": 821126,
+                "Warning Sign (film)": 27015
+            },
+            "value1": 71,
+            "value2": -1
+        },
+        "Jennifer Garner": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jennifer Garner",
+            "neighbors": {
+                "Daredevil (film)": 3895652
+            },
+            "value1": 46,
+            "value2": -1
+        },
+        "Jenny McCarthy": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jenny McCarthy",
+            "neighbors": {
+                "Witless Protection": 90470
+            },
+            "value1": 46,
+            "value2": -1
+        },
+        "Jeremy Renner": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jeremy Renner",
+            "neighbors": {
+                "North Country (film)": 525000
+            },
+            "value1": 48,
+            "value2": -1
+        },
+        "Jesse Eisenberg": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jesse Eisenberg",
+            "neighbors": {
+                "Now You See Me (film)": 10048571,
+                "Now You See Me 2": 9568571
+            },
+            "value1": 35,
+            "value2": -1
+        },
+        "Jim Carrey": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jim Carrey",
+            "neighbors": {
+                "Bruce Almighty": 8501754
+            },
+            "value1": 57,
+            "value2": -1
+        },
+        "Jim Caviezel": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jim Caviezel",
+            "neighbors": {
+                "High Crimes": 1276000
+            },
+            "value1": 50,
+            "value2": -1
+        },
+        "Joe Don Baker": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Joe Don Baker",
+            "neighbors": {
+                "The Grass Harp (film)": 6743
+            },
+            "value1": 83,
+            "value2": -1
+        },
+        "Joe Mantegna": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Joe Mantegna",
+            "neighbors": {
+                "Nine Lives (2005 film)": 22013,
+                "Witless Protection": 58614
+            },
+            "value1": 71,
+            "value2": -1
+        },
+        "Joe Pantoliano": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Joe Pantoliano",
+            "neighbors": {
+                "Daredevil (film)": 2674626,
+                "Just Getting Started (film)": 113432
+            },
+            "value1": 67,
+            "value2": -1
+        },
+        "Joe Pesci": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Joe Pesci",
+            "neighbors": {
+                "JFK (film)": 2702631
+            },
+            "value1": 76,
+            "value2": -1
+        },
+        "Joey King": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Joey King",
+            "neighbors": {
+                "Going in Style (2017 film)": 4468421,
+                "The Dark Knight Rises": 57105263
+            },
+            "value1": 19,
+            "value2": -1
+        },
+        "John Ashton (actor)": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "John Ashton (actor)",
+            "neighbors": {},
+            "value1": 71,
+            "value2": -1
+        },
+        "John C. McGinley": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "John C. McGinley",
+            "neighbors": {
+                "Seven (1995 film)": 5547457
+            },
+            "value1": 59,
+            "value2": -1
+        },
+        "John Corbett": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "John Corbett",
+            "neighbors": {
+                "All Saints (film)": 103508,
+                "Raise Your Voice": 259649
+            },
+            "value1": 57,
+            "value2": -1
+        },
+        "John Goodman": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "John Goodman",
+            "neighbors": {
+                "Evan Almighty": 2627272
+            },
+            "value1": 66,
+            "value2": -1
+        },
+        "John Michael Higgins": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "John Michael Higgins",
+            "neighbors": {
+                "Evan Almighty": 3096428
+            },
+            "value1": 56,
+            "value2": -1
+        },
+        "John Schneider (screen actor)": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "John Schneider (screen actor)",
+            "neighbors": {
+                "The Curse (1987 film)": 33275
+            },
+            "value1": 58,
+            "value2": -1
+        },
+        "John Shea": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "John Shea",
+            "neighbors": {
+                "Missing (1982 film)": 20521739
+            },
+            "value1": 69,
+            "value2": -1
+        },
+        "John Slattery": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "John Slattery",
+            "neighbors": {},
+            "value1": 56,
+            "value2": -1
+        },
+        "Johnny Depp": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Johnny Depp",
+            "neighbors": {
+                "Transcendence (2014 film)": 1872727
+            },
+            "value1": 55,
+            "value2": -1
+        },
+        "Johnny Handsome": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Johnny Handsome",
+            "neighbors": {
+                "Elizabeth McGovern": 126978,
+                "Ellen Barkin": 113090,
+                "Forest Whitaker": 126978,
+                "Lance Henriksen": 92792,
+                "Morgan Freeman": 89355
+            },
+            "value1": 7237794,
+            "value2": 1989
+        },
+        "Jon Voight": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jon Voight",
+            "neighbors": {
+                "Four Christmases": 2046250
+            },
+            "value1": 80,
+            "value2": -1
+        },
+        "Jonathan Jackson (actor)": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Jonathan Jackson (actor)",
+            "neighbors": {
+                "Tuck Everlasting (2002 film)": 536111
+            },
+            "value1": 36,
+            "value2": -1
+        },
+        "Joseph Gordon-Levitt": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Joseph Gordon-Levitt",
+            "neighbors": {
+                "The Dark Knight Rises": 28552631
+            },
+            "value1": 38,
+            "value2": -1
+        },
+        "Julie Warner": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Julie Warner",
+            "neighbors": {
+                "The Puppet Masters (film)": 160130
+            },
+            "value1": 54,
+            "value2": -1
+        },
+        "Just Getting Started (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Just Getting Started (film)",
+            "neighbors": {
+                "Elizabeth Ashley": 96202,
+                "Joe Pantoliano": 113432,
+                "Morgan Freeman": 93827,
+                "Rene Russo": 116923,
+                "Sheryl Lee Ralph": 122580,
+                "Tommy Lee Jones": 105555
+            },
+            "value1": 7600000,
+            "value2": 2017
+        },
+        "Karl Urban": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Karl Urban",
+            "neighbors": {
+                "Red (2010 film)": 4326086
+            },
+            "value1": 46,
+            "value2": -1
+        },
+        "Kate Mara": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Kate Mara",
+            "neighbors": {
+                "Deadfall (2012 film)": 54285,
+                "Transcendence (2014 film)": 2942857
+            },
+            "value1": 35,
+            "value2": -1
+        },
+        "Kathleen Quinlan": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Kathleen Quinlan",
+            "neighbors": {
+                "Independence Day (1983 film)": 2366,
+                "Warning Sign (film)": 29970
+            },
+            "value1": 64,
+            "value2": -1
+        },
+        "Kathleen Turner": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Kathleen Turner",
+            "neighbors": {
+                "The Man with Two Brains": 161772
+            },
+            "value1": 64,
+            "value2": -1
+        },
+        "Kathy Baker": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Kathy Baker",
+            "neighbors": {
+                "Nine Lives (2005 film)": 22984
+            },
+            "value1": 68,
+            "value2": -1
+        },
+        "Katie Holmes": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Katie Holmes",
+            "neighbors": {},
+            "value1": 40,
+            "value2": -1
+        },
+        "Keith Carradine": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Keith Carradine",
+            "neighbors": {
+                "Lake City (film)": 183
+            },
+            "value1": 69,
+            "value2": -1
+        },
+        "Keith Szarabajka": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Keith Szarabajka",
+            "neighbors": {
+                "Marie (film)": 215151
+            },
+            "value1": 66,
+            "value2": -1
+        },
+        "Kenan Thompson": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Kenan Thompson",
+            "neighbors": {
+                "The Magic of Belle Isle": 2559
+            },
+            "value1": 40,
+            "value2": -1
+        },
+        "Kevin Dunn": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Kevin Dunn",
+            "neighbors": {
+                "Chain Reaction (1996 film)": 971118
+            },
+            "value1": 62,
+            "value2": -1
+        },
+        "Kevin Kline": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Kevin Kline",
+            "neighbors": {
+                "Last Vegas": 1892957,
+                "Violets Are Blue (film)": 66806
+            },
+            "value1": 71,
+            "value2": -1
+        },
+        "Kevin Pollak": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Kevin Pollak",
+            "neighbors": {
+                "The Magic of Belle Isle": 1678
+            },
+            "value1": 61,
+            "value2": -1
+        },
+        "Kim Delaney": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Kim Delaney",
+            "neighbors": {
+                "That Was Then... This Is Now": 151404
+            },
+            "value1": 57,
+            "value2": -1
+        },
+        "Kiss the Girls (1997 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Kiss the Girls (1997 film)",
+            "neighbors": {
+                "Cary Elwes": 1080357,
+                "Jay O. Sanders": 930769,
+                "Morgan Freeman": 746913,
+                "Tony Goldwyn": 1043103
+            },
+            "value1": 60500000,
+            "value2": 1997
+        },
+        "Kris Kristofferson": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Kris Kristofferson",
+            "neighbors": {
+                "Deadfall (2012 film)": 23170,
+                "Dolphin Tale 2": 704878
+            },
+            "value1": 82,
+            "value2": -1
+        },
+        "Kristin Chenoweth": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Kristin Chenoweth",
+            "neighbors": {},
+            "value1": 50,
+            "value2": -1
+        },
+        "Lake City (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Lake City (film)",
+            "neighbors": {
+                "Drea de Matteo": 269,
+                "Keith Carradine": 183,
+                "Sissy Spacek": 183
+            },
+            "value1": 12686,
+            "value2": 2008
+        },
+        "Lance Henriksen": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Lance Henriksen",
+            "neighbors": {
+                "Johnny Handsome": 92792
+            },
+            "value1": 78,
+            "value2": -1
+        },
+        "Last Vegas": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Last Vegas",
+            "neighbors": {
+                "Kevin Kline": 1892957,
+                "Mary Steenburgen": 2036363,
+                "Morgan Freeman": 1659259
+            },
+            "value1": 134400000,
+            "value2": 2013
+        },
+        "Laurie Metcalf": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Laurie Metcalf",
+            "neighbors": {
+                "JFK (film)": 3260317
+            },
+            "value1": 63,
+            "value2": -1
+        },
+        "Lee Majors": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Lee Majors",
+            "neighbors": {
+                "The Liberation of L.B. Jones": 16455
+            },
+            "value1": 79,
+            "value2": -1
+        },
+        "Leighton Meester": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Leighton Meester",
+            "neighbors": {
+                "Hangman's Curse (film)": 5262
+            },
+            "value1": 32,
+            "value2": -1
+        },
+        "Liev Schreiber": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Liev Schreiber",
+            "neighbors": {
+                "The Sum of All Fears (film)": 3801960
+            },
+            "value1": 51,
+            "value2": -1
+        },
+        "Lindsay Crouse": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Lindsay Crouse",
+            "neighbors": {
+                "The Indian in the Cupboard (film)": 510000
+            },
+            "value1": 70,
+            "value2": -1
+        },
+        "Lisa Ann Walter": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Lisa Ann Walter",
+            "neighbors": {
+                "Bruce Almighty": 8810909
+            },
+            "value1": 55,
+            "value2": -1
+        },
+        "Lisa Zane": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Lisa Zane",
+            "neighbors": {
+                "Freddy's Dead: The Final Nightmare": 612280
+            },
+            "value1": 57,
+            "value2": -1
+        },
+        "LisaGay Hamilton": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "LisaGay Hamilton",
+            "neighbors": {
+                "Nine Lives (2005 film)": 28943,
+                "The Sum of All Fears (film)": 3590740
+            },
+            "value1": 54,
+            "value2": -1
+        },
+        "Live and Let Die (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Live and Let Die (film)",
+            "neighbors": {
+                "Jane Seymour (actress)": 2379411,
+                "Yaphet Kotto": 2048101
+            },
+            "value1": 161800000,
+            "value2": 1973
+        },
+        "Lizzy Caplan": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Lizzy Caplan",
+            "neighbors": {
+                "Now You See Me 2": 9302777
+            },
+            "value1": 36,
+            "value2": -1
+        },
+        "London Has Fallen": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "London Has Fallen",
+            "neighbors": {
+                "Aaron Eckhart": 4116000,
+                "Jackie Earle Haley": 3610526,
+                "Melissa Leo": 3548275,
+                "Morgan Freeman": 2540740,
+                "Radha Mitchell": 4573333,
+                "Robert Forster": 2672727
+            },
+            "value1": 205800000,
+            "value2": 2016
+        },
+        "Louis Gossett Jr.": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Louis Gossett Jr.",
+            "neighbors": {
+                "An Officer and a Gentleman": 1597560
+            },
+            "value1": 82,
+            "value2": -1
+        },
+        "Louise Fletcher": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Louise Fletcher",
+            "neighbors": {
+                "Firestarter (film)": 203571
+            },
+            "value1": 84,
+            "value2": -1
+        },
+        "Lucas Black": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Lucas Black",
+            "neighbors": {
+                "Get Low (film)": 269444
+            },
+            "value1": 36,
+            "value2": -1
+        },
+        "Lucky Number Slevin": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Lucky Number Slevin",
+            "neighbors": {
+                "Bruce Willis": 893650,
+                "Danny Aiello": 662352,
+                "Morgan Freeman": 695061,
+                "Robert Forster": 731168,
+                "Stanley Tucci": 970689
+            },
+            "value1": 56300000,
+            "value2": 2006
+        },
+        "Lucy (2014 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Lucy (2014 film)",
+            "neighbors": {
+                "Choi Min-sik": 8275000,
+                "Morgan Freeman": 5720987
+            },
+            "value1": 463400000,
+            "value2": 2014
+        },
+        "Mackenzie Foy": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Mackenzie Foy",
+            "neighbors": {
+                "The Nutcracker and the Four Realms": 9661111
+            },
+            "value1": 18,
+            "value2": -1
+        },
+        "Madeleine Stowe": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Madeleine Stowe",
+            "neighbors": {
+                "The Two Jakes": 166666
+            },
+            "value1": 60,
+            "value2": -1
+        },
+        "Madeline Carroll": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Madeline Carroll",
+            "neighbors": {
+                "The Magic of Belle Isle": 4654
+            },
+            "value1": 22,
+            "value2": -1
+        },
+        "Maggie Gyllenhaal": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Maggie Gyllenhaal",
+            "neighbors": {},
+            "value1": 41,
+            "value2": -1
+        },
+        "Major League II": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Major League II",
+            "neighbors": {
+                "Charlie Sheen": 577852,
+                "Corbin Bernsen": 478534,
+                "David Keith": 478534,
+                "Dennis Haysbert": 478534,
+                "Omar Epps": 680581
+            },
+            "value1": 30626182,
+            "value2": 1994
+        },
+        "Mandy Patinkin": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Mandy Patinkin",
+            "neighbors": {
+                "Ragtime (film)": 168168454545
+            },
+            "value1": 66,
+            "value2": -1
+        },
+        "Marie (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Marie (film)",
+            "neighbors": {
+                "Jeff Daniels": 221875,
+                "Keith Szarabajka": 215151,
+                "Morgan Freeman": 175308,
+                "Sissy Spacek": 205797
+            },
+            "value1": 14200000,
+            "value2": 1985
+        },
+        "Marisa Tomei": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Marisa Tomei",
+            "neighbors": {
+                "In the Bedroom": 803703
+            },
+            "value1": 54,
+            "value2": -1
+        },
+        "Mark Wahlberg": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Mark Wahlberg",
+            "neighbors": {},
+            "value1": 47,
+            "value2": -1
+        },
+        "Mary Beth Hurt": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Mary Beth Hurt",
+            "neighbors": {
+                "Affliction (1997 film)": 87917
+            },
+            "value1": 72,
+            "value2": -1
+        },
+        "Mary Elizabeth Mastrantonio": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Mary Elizabeth Mastrantonio",
+            "neighbors": {
+                "Robin Hood: Prince of Thieves": 6508333
+            },
+            "value1": 60,
+            "value2": -1
+        },
+        "Mary Kay Place": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Mary Kay Place",
+            "neighbors": {
+                "Nine Lives (2005 film)": 22013
+            },
+            "value1": 71,
+            "value2": -1
+        },
+        "Mary Steenburgen": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Mary Steenburgen",
+            "neighbors": {
+                "Four Christmases": 2480303,
+                "Last Vegas": 2036363,
+                "Ragtime (film)": 168168454545,
+                "The Grass Harp (film)": 8479
+            },
+            "value1": 66,
+            "value2": -1
+        },
+        "Mary-Louise Parker": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Mary-Louise Parker",
+            "neighbors": {
+                "Red (2010 film)": 3685185
+            },
+            "value1": 54,
+            "value2": -1
+        },
+        "Matt Damon": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Matt Damon",
+            "neighbors": {
+                "Invictus (film)": 2545833
+            },
+            "value1": 48,
+            "value2": -1
+        },
+        "Matthew Broderick": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Matthew Broderick",
+            "neighbors": {
+                "Glory (1989 film)": 478571
+            },
+            "value1": 56,
+            "value2": -1
+        },
+        "Matthew Macfadyen": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Matthew Macfadyen",
+            "neighbors": {
+                "The Nutcracker and the Four Realms": 3952272
+            },
+            "value1": 44,
+            "value2": -1
+        },
+        "Matthew Settle": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Matthew Settle",
+            "neighbors": {
+                "U-571 (film)": 2591836
+            },
+            "value1": 49,
+            "value2": -1
+        },
+        "Melanie Griffith": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Melanie Griffith",
+            "neighbors": {
+                "Something Wild (1986 film)": 137704
+            },
+            "value1": 61,
+            "value2": -1
+        },
+        "Melanie Mayron": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Melanie Mayron",
+            "neighbors": {
+                "Missing (1982 film)": 21454545
+            },
+            "value1": 66,
+            "value2": -1
+        },
+        "Melissa Leo": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Melissa Leo",
+            "neighbors": {
+                "London Has Fallen": 3548275,
+                "Oblivion (2013 film)": 4934482,
+                "Olympus Has Fallen": 2936206
+            },
+            "value1": 58,
+            "value2": -1
+        },
+        "Men of Honor": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Men of Honor",
+            "neighbors": {
+                "Aunjanue Ellis": 1680479,
+                "David Keith": 1286617,
+                "Michael Rapaport": 1715489
+            },
+            "value1": 82343495,
+            "value2": 2000
+        },
+        "Michael Caine": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Michael Caine",
+            "neighbors": {
+                "Batman Begins": 4414117,
+                "Going in Style (2017 film)": 998823,
+                "Now You See Me (film)": 4137647,
+                "Now You See Me 2": 3940000,
+                "The Dark Knight (film)": 11823529,
+                "The Dark Knight Rises": 12764705
+            },
+            "value1": 85,
+            "value2": -1
+        },
+        "Michael Moriarty": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Michael Moriarty",
+            "neighbors": {
+                "Along Came a Spider (film)": 1366233
+            },
+            "value1": 77,
+            "value2": -1
+        },
+        "Michael O'Keefe": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Michael O'Keefe",
+            "neighbors": {
+                "The Great Santini": 74603
+            },
+            "value1": 63,
+            "value2": -1
+        },
+        "Michael Rapaport": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Michael Rapaport",
+            "neighbors": {
+                "Men of Honor": 1715489
+            },
+            "value1": 48,
+            "value2": -1
+        },
+        "Michael Rooker": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Michael Rooker",
+            "neighbors": {
+                "JFK (film)": 3260317
+            },
+            "value1": 63,
+            "value2": -1
+        },
+        "Michael Wincott": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Michael Wincott",
+            "neighbors": {
+                "Along Came a Spider (film)": 1724590,
+                "Robin Hood: Prince of Thieves": 6401639
+            },
+            "value1": 61,
+            "value2": -1
+        },
+        "Michelle Monaghan": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Michelle Monaghan",
+            "neighbors": {
+                "North Country (film)": 600000
+            },
+            "value1": 42,
+            "value2": -1
+        },
+        "Miguel Sandoval": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Miguel Sandoval",
+            "neighbors": {
+                "Nine Lives (2005 film)": 23327
+            },
+            "value1": 67,
+            "value2": -1
+        },
+        "Million Dollar Baby": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Million Dollar Baby",
+            "neighbors": {
+                "Hilary Swank": 4927272,
+                "Morgan Freeman": 2676543
+            },
+            "value1": 216800000,
+            "value2": 2004
+        },
+        "Missing (1982 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Missing (1982 film)",
+            "neighbors": {
+                "John Shea": 20521739,
+                "Melanie Mayron": 21454545,
+                "Sissy Spacek": 20521739
+            },
+            "value1": 1416000000,
+            "value2": 1982
+        },
+        "Molly Parker": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Molly Parker",
+            "neighbors": {
+                "Nine Lives (2005 film)": 33976
+            },
+            "value1": 46,
+            "value2": -1
+        },
+        "Molly Shannon": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Molly Shannon",
+            "neighbors": {
+                "Evan Almighty": 3211111,
+                "Gray Matters (2006 film)": 17490
+            },
+            "value1": 54,
+            "value2": -1
+        },
+        "Momentum (2015 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Momentum (2015 film)",
+            "neighbors": {
+                "James Purefoy": 1928
+            },
+            "value1": 104136,
+            "value2": 2015
+        },
+        "Monica Potter": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Monica Potter",
+            "neighbors": {
+                "Along Came a Spider (film)": 2238297
+            },
+            "value1": 47,
+            "value2": -1
+        },
+        "Morgan Freeman": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Morgan Freeman",
+            "neighbors": {
+                "10 Items or Less (film)": 17274,
+                "Along Came a Spider (film)": 1298765,
+                "Amistad (film)": 545679,
+                "An Unfinished Life": 229629,
+                "Batman Begins": 4632098,
+                "Bruce Almighty": 5982716,
+                "Chain Reaction (1996 film)": 743325,
+                "Deep Impact (film)": 4314814,
+                "Dolphin Tale": 1183950,
+                "Dolphin Tale 2": 713580,
+                "Driving Miss Daisy": 1800000,
+                "Evan Almighty": 2140740,
+                "Glory (1989 film)": 330864,
+                "Going in Style (2017 film)": 1048148,
+                "Gone Baby Gone": 427160,
+                "High Crimes": 787654,
+                "Invictus (film)": 1508641,
+                "Johnny Handsome": 89355,
+                "Just Getting Started (film)": 93827,
+                "Kiss the Girls (1997 film)": 746913,
+                "Last Vegas": 1659259,
+                "London Has Fallen": 2540740,
+                "Lucky Number Slevin": 695061,
+                "Lucy (2014 film)": 5720987,
+                "Marie (film)": 175308,
+                "Million Dollar Baby": 2676543,
+                "Now You See Me (film)": 4341975,
+                "Now You See Me 2": 4134567,
+                "Nurse Betty": 362962,
+                "Oblivion (2013 film)": 3533333,
+                "Olympus Has Fallen": 2102469,
+                "Red (2010 film)": 2456790,
+                "Robin Hood: Prince of Thieves": 4820987,
+                "Seven (1995 film)": 4040740,
+                "Ted 2": 2675308,
+                "That Was Then... This Is Now": 106544,
+                "The Bucket List": 2165432,
+                "The Dark Knight (film)": 12407407,
+                "The Dark Knight Rises": 13395061,
+                "The Lego Movie": 5791358,
+                "The Magic of Belle Isle": 1264,
+                "The Nutcracker and the Four Realms": 2146913,
+                "The Shawshank Redemption": 719753,
+                "The Sum of All Fears (film)": 2393827,
+                "Transcendence (2014 film)": 1271604,
+                "Unforgiven": 1965432,
+                "Unleashed (2005 film)": 628395,
+                "Wanted (2008 film)": 4214814
+            },
+            "value1": 81,
+            "value2": -1
+        },
+        "M\u00e9lanie Laurent": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "M\u00e9lanie Laurent",
+            "neighbors": {
+                "Now You See Me (film)": 9769444
+            },
+            "value1": 36,
+            "value2": -1
+        },
+        "Nancy Allen (actress)": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Nancy Allen (actress)",
+            "neighbors": {
+                "Carrie (1976 film)": 497058,
+                "Terror in the Aisles": 147129
+            },
+            "value1": 68,
+            "value2": -1
+        },
+        "Nick Nolte": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Nick Nolte",
+            "neighbors": {
+                "Affliction (1997 film)": 81154
+            },
+            "value1": 78,
+            "value2": -1
+        },
+        "Nick Offerman": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Nick Offerman",
+            "neighbors": {
+                "The Lego Movie": 9772916
+            },
+            "value1": 48,
+            "value2": -1
+        },
+        "Nick Stahl": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Nick Stahl",
+            "neighbors": {
+                "In the Bedroom": 1112820
+            },
+            "value1": 39,
+            "value2": -1
+        },
+        "Nikolaj Coster-Waldau": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Nikolaj Coster-Waldau",
+            "neighbors": {},
+            "value1": 48,
+            "value2": -1
+        },
+        "Nine Lives (2005 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Nine Lives (2005 film)",
+            "neighbors": {
+                "Aidan Quinn": 26490,
+                "Amanda Seyfried": 47361,
+                "Amy Brenneman": 28943,
+                "Dakota Fanning": 62516,
+                "Holly Hunter": 26048,
+                "Ian McShane": 20564,
+                "Jason Isaacs": 28416,
+                "Joe Mantegna": 22013,
+                "Kathy Baker": 22984,
+                "LisaGay Hamilton": 28943,
+                "Mary Kay Place": 22013,
+                "Miguel Sandoval": 23327,
+                "Molly Parker": 33976,
+                "Robin Wright": 30056,
+                "Sissy Spacek": 22651,
+                "Sydney Tamiia Poitier": 34731
+            },
+            "value1": 1562923,
+            "value2": 2005
+        },
+        "North Country (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "North Country (film)",
+            "neighbors": {
+                "Jeremy Renner": 525000,
+                "Michelle Monaghan": 600000,
+                "Richard Jenkins": 354929,
+                "Sean Bean": 427118,
+                "Sissy Spacek": 365217,
+                "Woody Harrelson": 442105
+            },
+            "value1": 25200000,
+            "value2": 2005
+        },
+        "Now You See Me (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Now You See Me (film)",
+            "neighbors": {
+                "Dave Franco": 10657575,
+                "Isla Fisher": 8179069,
+                "Jesse Eisenberg": 10048571,
+                "Michael Caine": 4137647,
+                "Morgan Freeman": 4341975,
+                "M\u00e9lanie Laurent": 9769444,
+                "Woody Harrelson": 6170175
+            },
+            "value1": 351700000,
+            "value2": 2013
+        },
+        "Now You See Me 2": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Now You See Me 2",
+            "neighbors": {
+                "Dave Franco": 10148484,
+                "Jay Chou": 8372500,
+                "Jesse Eisenberg": 9568571,
+                "Lizzy Caplan": 9302777,
+                "Michael Caine": 3940000,
+                "Morgan Freeman": 4134567,
+                "Woody Harrelson": 5875438
+            },
+            "value1": 334900000,
+            "value2": 2016
+        },
+        "Nurse Betty": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Nurse Betty",
+            "neighbors": {
+                "Aaron Eckhart": 588000,
+                "Allison Janney": 498305,
+                "Crispin Glover": 544444,
+                "Greg Kinnear": 534545,
+                "Morgan Freeman": 362962
+            },
+            "value1": 29400000,
+            "value2": 2000
+        },
+        "Oblivion (2013 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Oblivion (2013 film)",
+            "neighbors": {
+                "Andrea Riseborough": 7735135,
+                "Melissa Leo": 4934482,
+                "Morgan Freeman": 3533333,
+                "Tom Cruise": 5110714
+            },
+            "value1": 286200000,
+            "value2": 2013
+        },
+        "Octavia Spencer": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Octavia Spencer",
+            "neighbors": {},
+            "value1": 46,
+            "value2": -1
+        },
+        "Olivia Wilde": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Olivia Wilde",
+            "neighbors": {
+                "Deadfall (2012 film)": 55882
+            },
+            "value1": 34,
+            "value2": -1
+        },
+        "Olympus Has Fallen": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Olympus Has Fallen",
+            "neighbors": {
+                "Aaron Eckhart": 3406000,
+                "Ashley Judd": 3406000,
+                "Dylan McDermott": 2987719,
+                "Melissa Leo": 2936206,
+                "Morgan Freeman": 2102469,
+                "Radha Mitchell": 3784444,
+                "Robert Forster": 2211688
+            },
+            "value1": 170300000,
+            "value2": 2013
+        },
+        "Omar Epps": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Omar Epps",
+            "neighbors": {
+                "Major League II": 680581
+            },
+            "value1": 45,
+            "value2": -1
+        },
+        "Owen Wilson": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Owen Wilson",
+            "neighbors": {
+                "Behind Enemy Lines (2001 film)": 1840000
+            },
+            "value1": 50,
+            "value2": -1
+        },
+        "Pamela Anderson": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Pamela Anderson",
+            "neighbors": {
+                "Raw Justice": 691267
+            },
+            "value1": 51,
+            "value2": -1
+        },
+        "Patti LuPone": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Patti LuPone",
+            "neighbors": {
+                "Driving Miss Daisy": 2113043,
+                "Fighting Back (1982 American film)": 92753
+            },
+            "value1": 69,
+            "value2": -1
+        },
+        "Paul Bettany": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Paul Bettany",
+            "neighbors": {
+                "Transcendence (2014 film)": 2191489
+            },
+            "value1": 47,
+            "value2": -1
+        },
+        "Penelope Ann Miller": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Penelope Ann Miller",
+            "neighbors": {
+                "Along Came a Spider (film)": 1912727
+            },
+            "value1": 55,
+            "value2": -1
+        },
+        "Philip Baker Hall": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Philip Baker Hall",
+            "neighbors": {
+                "Bruce Almighty": 5570114,
+                "The Sum of All Fears (film)": 2228735
+            },
+            "value1": 87,
+            "value2": -1
+        },
+        "Piper Laurie": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Piper Laurie",
+            "neighbors": {
+                "Carrie (1976 film)": 388505,
+                "The Grass Harp (film)": 6433
+            },
+            "value1": 87,
+            "value2": -1
+        },
+        "Prime Cut": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Prime Cut",
+            "neighbors": {
+                "Angel Tompkins": 19736,
+                "Sissy Spacek": 21739
+            },
+            "value1": 1500000,
+            "value2": 1972
+        },
+        "Rachel Hurd-Wood": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Rachel Hurd-Wood",
+            "neighbors": {
+                "An American Haunting": 1057576
+            },
+            "value1": 28,
+            "value2": -1
+        },
+        "Rachel Weisz": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Rachel Weisz",
+            "neighbors": {
+                "Chain Reaction (1996 film)": 1254361
+            },
+            "value1": 48,
+            "value2": -1
+        },
+        "Radha Mitchell": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Radha Mitchell",
+            "neighbors": {
+                "London Has Fallen": 4573333,
+                "Olympus Has Fallen": 3784444
+            },
+            "value1": 45,
+            "value2": -1
+        },
+        "Raggedy Man": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Raggedy Man",
+            "neighbors": {
+                "Sissy Spacek": 28640
+            },
+            "value1": 1976198,
+            "value2": 1981
+        },
+        "Ragtime (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Ragtime (film)",
+            "neighbors": {
+                "Elizabeth McGovern": 194721368421,
+                "Fran Drescher": 181952754098,
+                "Jeff Daniels": 173423718750,
+                "Jeffrey DeMunn": 156325605633,
+                "Mandy Patinkin": 168168454545,
+                "Mary Steenburgen": 168168454545
+            },
+            "value1": 11099118000000,
+            "value2": 1981
+        },
+        "Raise Your Voice": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Raise Your Voice",
+            "neighbors": {
+                "David Keith": 231250,
+                "Hilary Duff": 477419,
+                "Jason Ritter": 379487,
+                "John Corbett": 259649,
+                "Rebecca De Mornay": 250847
+            },
+            "value1": 14800000,
+            "value2": 2004
+        },
+        "Raw Justice": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Raw Justice",
+            "neighbors": {
+                "David Keith": 550853,
+                "Pamela Anderson": 691267
+            },
+            "value1": 35254617,
+            "value2": 1994
+        },
+        "Ray Liotta": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Ray Liotta",
+            "neighbors": {
+                "Something Wild (1986 film)": 131250
+            },
+            "value1": 64,
+            "value2": -1
+        },
+        "Rebecca De Mornay": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Rebecca De Mornay",
+            "neighbors": {
+                "Raise Your Voice": 250847
+            },
+            "value1": 59,
+            "value2": -1
+        },
+        "Rebecca Hall": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Rebecca Hall",
+            "neighbors": {
+                "Transcendence (2014 film)": 2861111
+            },
+            "value1": 36,
+            "value2": -1
+        },
+        "Rebecca Romijn": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Rebecca Romijn",
+            "neighbors": {},
+            "value1": 46,
+            "value2": -1
+        },
+        "Red (2010 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Red (2010 film)",
+            "neighbors": {
+                "Bruce Willis": 3158730,
+                "Karl Urban": 4326086,
+                "Mary-Louise Parker": 3685185,
+                "Morgan Freeman": 2456790
+            },
+            "value1": 199000000,
+            "value2": 2010
+        },
+        "Reese Witherspoon": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Reese Witherspoon",
+            "neighbors": {
+                "Four Christmases": 3897619
+            },
+            "value1": 42,
+            "value2": -1
+        },
+        "Rene Russo": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Rene Russo",
+            "neighbors": {
+                "Just Getting Started (film)": 116923
+            },
+            "value1": 65,
+            "value2": -1
+        },
+        "Richard E. Grant": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Richard E. Grant",
+            "neighbors": {
+                "The Nutcracker and the Four Realms": 2850819
+            },
+            "value1": 61,
+            "value2": -1
+        },
+        "Richard Gere": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Richard Gere",
+            "neighbors": {
+                "An Officer and a Gentleman": 1898550
+            },
+            "value1": 69,
+            "value2": -1
+        },
+        "Richard Jenkins": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Richard Jenkins",
+            "neighbors": {
+                "North Country (film)": 354929
+            },
+            "value1": 71,
+            "value2": -1
+        },
+        "Rob Morrow": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Rob Morrow",
+            "neighbors": {
+                "The Bucket List": 3132142
+            },
+            "value1": 56,
+            "value2": -1
+        },
+        "Robert Englund": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Robert Englund",
+            "neighbors": {
+                "Freddy's Dead: The Final Nightmare": 491549
+            },
+            "value1": 71,
+            "value2": -1
+        },
+        "Robert Forster": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Robert Forster",
+            "neighbors": {
+                "London Has Fallen": 2672727,
+                "Lucky Number Slevin": 731168,
+                "Olympus Has Fallen": 2211688
+            },
+            "value1": 77,
+            "value2": -1
+        },
+        "Robin Hood: Prince of Thieves": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Robin Hood: Prince of Thieves",
+            "neighbors": {
+                "Christian Slater": 7969387,
+                "Mary Elizabeth Mastrantonio": 6508333,
+                "Michael Wincott": 6401639,
+                "Morgan Freeman": 4820987
+            },
+            "value1": 390500000,
+            "value2": 1991
+        },
+        "Robin Wright": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Robin Wright",
+            "neighbors": {
+                "Nine Lives (2005 film)": 30056
+            },
+            "value1": 52,
+            "value2": -1
+        },
+        "Ron Rifkin": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Ron Rifkin",
+            "neighbors": {
+                "The Sum of All Fears (film)": 2454430
+            },
+            "value1": 79,
+            "value2": -1
+        },
+        "Rub\u00e9n Blades": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Rub\u00e9n Blades",
+            "neighbors": {
+                "The Two Jakes": 142857
+            },
+            "value1": 70,
+            "value2": -1
+        },
+        "Sally Field": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Sally Field",
+            "neighbors": {},
+            "value1": 72,
+            "value2": -1
+        },
+        "Sam Waterston": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Sam Waterston",
+            "neighbors": {
+                "Warning Sign (film)": 24591
+            },
+            "value1": 78,
+            "value2": -1
+        },
+        "Sean Bean": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Sean Bean",
+            "neighbors": {
+                "North Country (film)": 427118
+            },
+            "value1": 59,
+            "value2": -1
+        },
+        "Sean Hayes (actor)": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Sean Hayes (actor)",
+            "neighbors": {
+                "The Bucket List": 3654166
+            },
+            "value1": 48,
+            "value2": -1
+        },
+        "Sean Patrick Flanery": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Sean Patrick Flanery",
+            "neighbors": {
+                "The Grass Harp (film)": 10559
+            },
+            "value1": 53,
+            "value2": -1
+        },
+        "Seven (1995 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Seven (1995 film)",
+            "neighbors": {
+                "Brad Pitt": 5950909,
+                "Gwyneth Paltrow": 7115217,
+                "John C. McGinley": 5547457,
+                "Morgan Freeman": 4040740
+            },
+            "value1": 327300000,
+            "value2": 1995
+        },
+        "Sharks' Treasure": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Sharks' Treasure",
+            "neighbors": {
+                "Yaphet Kotto": 25316
+            },
+            "value1": 2000000,
+            "value2": 1975
+        },
+        "Sharon Gless": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Sharon Gless",
+            "neighbors": {
+                "The Star Chamber": 74666
+            },
+            "value1": 75,
+            "value2": -1
+        },
+        "Sheryl Lee Ralph": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Sheryl Lee Ralph",
+            "neighbors": {
+                "Just Getting Started (film)": 122580
+            },
+            "value1": 62,
+            "value2": -1
+        },
+        "Shirley MacLaine": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Shirley MacLaine",
+            "neighbors": {},
+            "value1": 84,
+            "value2": -1
+        },
+        "Sigourney Weaver": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Sigourney Weaver",
+            "neighbors": {
+                "Alien (film)": 1520584
+            },
+            "value1": 69,
+            "value2": -1
+        },
+        "Simon Baker": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Simon Baker",
+            "neighbors": {
+                "The Ring Two": 3295918
+            },
+            "value1": 49,
+            "value2": -1
+        },
+        "Sissy Spacek": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Sissy Spacek",
+            "neighbors": {
+                "'night, Mother (film)": 6403,
+                "Affliction (1997 film)": 91739,
+                "An American Haunting": 429161,
+                "Blast from the Past (film)": 584057,
+                "Carrie (1976 film)": 489855,
+                "Coal Miner's Daughter (film)": 973623,
+                "Crimes of the Heart (film)": 331964086956,
+                "Deadfall (2012 film)": 27536,
+                "Four Christmases": 2372463,
+                "Get Low (film)": 140579,
+                "Gray Matters (2006 film)": 13688,
+                "Hard Promises (1992 film)": 4439,
+                "In the Bedroom": 628985,
+                "JFK (film)": 2976811,
+                "Lake City (film)": 183,
+                "Marie (film)": 205797,
+                "Missing (1982 film)": 20521739,
+                "Nine Lives (2005 film)": 22651,
+                "North Country (film)": 365217,
+                "Prime Cut": 21739,
+                "Raggedy Man": 28640,
+                "The Grass Harp (film)": 8111,
+                "The Long Walk Home": 69609,
+                "The Old Man & the Gun": 230434,
+                "The Ring Two": 2340579,
+                "The Straight Story": 89855,
+                "Trading Mom": 4624,
+                "Tuck Everlasting (2002 film)": 279710,
+                "Violets Are Blue (film)": 68743
+            },
+            "value1": 69,
+            "value2": -1
+        },
+        "Something Wild (1986 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Something Wild (1986 film)",
+            "neighbors": {
+                "Jeff Daniels": 131250,
+                "Melanie Griffith": 137704,
+                "Ray Liotta": 131250
+            },
+            "value1": 8400000,
+            "value2": 1986
+        },
+        "Stanley Tucci": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Stanley Tucci",
+            "neighbors": {
+                "Lucky Number Slevin": 970689
+            },
+            "value1": 58,
+            "value2": -1
+        },
+        "Stellan Skarsg\u00e5rd": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Stellan Skarsg\u00e5rd",
+            "neighbors": {
+                "Amistad (film)": 659701
+            },
+            "value1": 67,
+            "value2": -1
+        },
+        "Stephen Dillane": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Stephen Dillane",
+            "neighbors": {
+                "Two If by Sea": 175409
+            },
+            "value1": 61,
+            "value2": -1
+        },
+        "Steve Carell": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Steve Carell",
+            "neighbors": {
+                "Bruce Almighty": 8653571,
+                "Evan Almighty": 3096428
+            },
+            "value1": 56,
+            "value2": -1
+        },
+        "Sydney Tamiia Poitier": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Sydney Tamiia Poitier",
+            "neighbors": {
+                "Nine Lives (2005 film)": 34731
+            },
+            "value1": 45,
+            "value2": -1
+        },
+        "Take This Job and Shove It (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Take This Job and Shove It (film)",
+            "neighbors": {
+                "Barbara Hershey": 247451,
+                "David Keith": 274516
+            },
+            "value1": 17569030,
+            "value2": 1981
+        },
+        "Ted 2": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Ted 2",
+            "neighbors": {
+                "Amanda Seyfried": 6566666,
+                "Dennis Haysbert": 3385937,
+                "Giovanni Ribisi": 4925000,
+                "Morgan Freeman": 2675308
+            },
+            "value1": 216700000,
+            "value2": 2015
+        },
+        "Terms of Endearment": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Terms of Endearment",
+            "neighbors": {
+                "Debra Winger": 1720634,
+                "Jeff Daniels": 1693750
+            },
+            "value1": 108400000,
+            "value2": 1983
+        },
+        "Terror in the Aisles": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Terror in the Aisles",
+            "neighbors": {
+                "Nancy Allen (actress)": 147129
+            },
+            "value1": 10004817,
+            "value2": 1984
+        },
+        "Tess Harper": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Tess Harper",
+            "neighbors": {
+                "Crimes of the Heart (film)": 336845911764
+            },
+            "value1": 68,
+            "value2": -1
+        },
+        "That Was Then... This Is Now": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "That Was Then... This Is Now",
+            "neighbors": {
+                "Barbara Babcock": 106544,
+                "Kim Delaney": 151404,
+                "Morgan Freeman": 106544
+            },
+            "value1": 8630068,
+            "value2": 1985
+        },
+        "The Bucket List": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Bucket List",
+            "neighbors": {
+                "Morgan Freeman": 2165432,
+                "Rob Morrow": 3132142,
+                "Sean Hayes (actor)": 3654166
+            },
+            "value1": 175400000,
+            "value2": 2007
+        },
+        "The Curse (1987 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Curse (1987 film)",
+            "neighbors": {
+                "John Schneider (screen actor)": 33275
+            },
+            "value1": 1930001,
+            "value2": 1987
+        },
+        "The Dark Knight (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Dark Knight (film)",
+            "neighbors": {
+                "Aaron Eckhart": 20100000,
+                "Michael Caine": 11823529,
+                "Morgan Freeman": 12407407
+            },
+            "value1": 1005000000,
+            "value2": 2008
+        },
+        "The Dark Knight Rises": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Dark Knight Rises",
+            "neighbors": {
+                "Joey King": 57105263,
+                "Joseph Gordon-Levitt": 28552631,
+                "Michael Caine": 12764705,
+                "Morgan Freeman": 13395061,
+                "Tom Hardy": 26463414
+            },
+            "value1": 1085000000,
+            "value2": 2012
+        },
+        "The Grass Harp (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Grass Harp (film)",
+            "neighbors": {
+                "Edward Furlong": 13650,
+                "Joe Don Baker": 6743,
+                "Mary Steenburgen": 8479,
+                "Piper Laurie": 6433,
+                "Sean Patrick Flanery": 10559,
+                "Sissy Spacek": 8111
+            },
+            "value1": 559677,
+            "value2": 1996
+        },
+        "The Great Santini": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Great Santini",
+            "neighbors": {
+                "Blythe Danner": 61842,
+                "Michael O'Keefe": 74603
+            },
+            "value1": 4700000,
+            "value2": 1979
+        },
+        "The Help (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Help (film)",
+            "neighbors": {
+                "Allison Janney": 3671186,
+                "Bryce Dallas Howard": 5854054
+            },
+            "value1": 216600000,
+            "value2": 2011
+        },
+        "The Indian in the Cupboard (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Indian in the Cupboard (film)",
+            "neighbors": {
+                "David Keith": 557812,
+                "Lindsay Crouse": 510000
+            },
+            "value1": 35700000,
+            "value2": 1995
+        },
+        "The Lego Movie": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Lego Movie",
+            "neighbors": {
+                "Alison Brie": 13030555,
+                "Charlie Day": 10909302,
+                "Chris Pratt": 12028205,
+                "Elizabeth Banks": 10424444,
+                "Morgan Freeman": 5791358,
+                "Nick Offerman": 9772916,
+                "Will Arnett": 9772916,
+                "Will Ferrell": 9198039
+            },
+            "value1": 469100000,
+            "value2": 2014
+        },
+        "The Liberation of L.B. Jones": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Liberation of L.B. Jones",
+            "neighbors": {
+                "Anthony Zerbe": 15853,
+                "Barbara Hershey": 18309,
+                "Lee Majors": 16455,
+                "Yaphet Kotto": 16455
+            },
+            "value1": 1300000,
+            "value2": 1970
+        },
+        "The Long Walk Home": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Long Walk Home",
+            "neighbors": {
+                "Dwight Schultz": 67648,
+                "Dylan Baker": 81407,
+                "Sissy Spacek": 69609,
+                "Ving Rhames": 81407
+            },
+            "value1": 4803039,
+            "value2": 1990
+        },
+        "The Lords of Discipline (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Lords of Discipline (film)",
+            "neighbors": {
+                "David Keith": 184173
+            },
+            "value1": 11787127,
+            "value2": 1983
+        },
+        "The Magic of Belle Isle": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Magic of Belle Isle",
+            "neighbors": {
+                "Emma Fuhrmann": 6022,
+                "Fred Willard": 1296,
+                "Kenan Thompson": 2559,
+                "Kevin Pollak": 1678,
+                "Madeline Carroll": 4654,
+                "Morgan Freeman": 1264,
+                "Virginia Madsen": 1796
+            },
+            "value1": 102388,
+            "value2": 2012
+        },
+        "The Man with Two Brains": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Man with Two Brains",
+            "neighbors": {
+                "David Warner (actor)": 134460,
+                "Kathleen Turner": 161772
+            },
+            "value1": 10353438,
+            "value2": 1983
+        },
+        "The Nutcracker and the Four Realms": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Nutcracker and the Four Realms",
+            "neighbors": {
+                "Helen Mirren": 2382191,
+                "Mackenzie Foy": 9661111,
+                "Matthew Macfadyen": 3952272,
+                "Morgan Freeman": 2146913,
+                "Richard E. Grant": 2850819
+            },
+            "value1": 173900000,
+            "value2": 2018
+        },
+        "The Old Man & the Gun": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Old Man & the Gun",
+            "neighbors": {
+                "Casey Affleck": 369767,
+                "Sissy Spacek": 230434,
+                "Tika Sumpter": 418421
+            },
+            "value1": 15900000,
+            "value2": 2018
+        },
+        "The Puppet Masters (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Puppet Masters (film)",
+            "neighbors": {
+                "Julie Warner": 160130,
+                "Yaphet Kotto": 109456
+            },
+            "value1": 8647042,
+            "value2": 1994
+        },
+        "The Purple Rose of Cairo": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Purple Rose of Cairo",
+            "neighbors": {
+                "Danny Aiello": 125074,
+                "Jeff Daniels": 166114
+            },
+            "value1": 10631333,
+            "value2": 1985
+        },
+        "The Ring Two": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Ring Two",
+            "neighbors": {
+                "Elizabeth Perkins": 2784482,
+                "Gary Cole": 2604838,
+                "Simon Baker": 3295918,
+                "Sissy Spacek": 2340579
+            },
+            "value1": 161500000,
+            "value2": 2005
+        },
+        "The Rose (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Rose (film)",
+            "neighbors": {},
+            "value1": 29200000,
+            "value2": 1979
+        },
+        "The Running Man (1987 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Running Man (1987 film)",
+            "neighbors": {
+                "Arnold Schwarzenegger": 536619,
+                "Yaphet Kotto": 482278
+            },
+            "value1": 38100000,
+            "value2": 1987
+        },
+        "The Shawshank Redemption": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Shawshank Redemption",
+            "neighbors": {
+                "Bob Gunton": 798630,
+                "Clancy Brown": 971666,
+                "Gil Bellows": 1143137,
+                "Jeffrey DeMunn": 821126,
+                "Morgan Freeman": 719753,
+                "William Sadler (actor)": 857352
+            },
+            "value1": 58300000,
+            "value2": 1994
+        },
+        "The Star Chamber": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Star Chamber",
+            "neighbors": {
+                "Sharon Gless": 74666,
+                "Yaphet Kotto": 70886
+            },
+            "value1": 5600000,
+            "value2": 1983
+        },
+        "The Straight Story": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Straight Story",
+            "neighbors": {
+                "Sissy Spacek": 89855
+            },
+            "value1": 6200000,
+            "value2": 1999
+        },
+        "The Sum of All Fears (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Sum of All Fears (film)",
+            "neighbors": {
+                "Bridget Moynahan": 4125531,
+                "Bruce McGill": 2851470,
+                "Liev Schreiber": 3801960,
+                "LisaGay Hamilton": 3590740,
+                "Morgan Freeman": 2393827,
+                "Philip Baker Hall": 2228735,
+                "Ron Rifkin": 2454430
+            },
+            "value1": 193900000,
+            "value2": 2002
+        },
+        "The Thomas Crown Affair (1968 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Thomas Crown Affair (1968 film)",
+            "neighbors": {
+                "Faye Dunaway": 179487
+            },
+            "value1": 14000000,
+            "value2": 1968
+        },
+        "The Two Jakes": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "The Two Jakes",
+            "neighbors": {
+                "David Keith": 156250,
+                "Harvey Keitel": 126582,
+                "Madeleine Stowe": 166666,
+                "Rub\u00e9n Blades": 142857
+            },
+            "value1": 10000000,
+            "value2": 1990
+        },
+        "Tika Sumpter": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Tika Sumpter",
+            "neighbors": {
+                "The Old Man & the Gun": 418421
+            },
+            "value1": 38,
+            "value2": -1
+        },
+        "Tim McGraw": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Tim McGraw",
+            "neighbors": {
+                "Four Christmases": 3209803
+            },
+            "value1": 51,
+            "value2": -1
+        },
+        "Titus Welliver": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Titus Welliver",
+            "neighbors": {},
+            "value1": 57,
+            "value2": -1
+        },
+        "Tom Cavanagh": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Tom Cavanagh",
+            "neighbors": {
+                "Gray Matters (2006 film)": 17172
+            },
+            "value1": 55,
+            "value2": -1
+        },
+        "Tom Cruise": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Tom Cruise",
+            "neighbors": {
+                "Oblivion (2013 film)": 5110714
+            },
+            "value1": 56,
+            "value2": -1
+        },
+        "Tom Hardy": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Tom Hardy",
+            "neighbors": {
+                "The Dark Knight Rises": 26463414
+            },
+            "value1": 41,
+            "value2": -1
+        },
+        "Tom Wilkinson": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Tom Wilkinson",
+            "neighbors": {
+                "Batman Begins": 5284507,
+                "In the Bedroom": 611267
+            },
+            "value1": 71,
+            "value2": -1
+        },
+        "Tommy Lee Jones": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Tommy Lee Jones",
+            "neighbors": {
+                "Back Roads (1981 film)": 163888,
+                "Coal Miner's Daughter (film)": 933055,
+                "JFK (film)": 2852777,
+                "Just Getting Started (film)": 105555
+            },
+            "value1": 72,
+            "value2": -1
+        },
+        "Tony Goldwyn": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Tony Goldwyn",
+            "neighbors": {
+                "Kiss the Girls (1997 film)": 1043103
+            },
+            "value1": 58,
+            "value2": -1
+        },
+        "Trading Mom": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Trading Mom",
+            "neighbors": {
+                "Sissy Spacek": 4624
+            },
+            "value1": 319123,
+            "value2": 1994
+        },
+        "Transcendence (2014 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Transcendence (2014 film)",
+            "neighbors": {
+                "Johnny Depp": 1872727,
+                "Kate Mara": 2942857,
+                "Morgan Freeman": 1271604,
+                "Paul Bettany": 2191489,
+                "Rebecca Hall": 2861111
+            },
+            "value1": 103000000,
+            "value2": 2014
+        },
+        "Treat Williams": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Treat Williams",
+            "neighbors": {
+                "Deadfall (2012 film)": 28358
+            },
+            "value1": 67,
+            "value2": -1
+        },
+        "Truck Turner": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Truck Turner",
+            "neighbors": {
+                "Yaphet Kotto": 28227
+            },
+            "value1": 2230000,
+            "value2": 1974
+        },
+        "Tuck Everlasting (2002 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Tuck Everlasting (2002 film)",
+            "neighbors": {
+                "Alexis Bledel": 521621,
+                "Amy Irving": 296923,
+                "Jonathan Jackson (actor)": 536111,
+                "Sissy Spacek": 279710,
+                "Victor Garber": 279710,
+                "William Hurt": 283823
+            },
+            "value1": 19300000,
+            "value2": 2002
+        },
+        "Two If by Sea": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Two If by Sea",
+            "neighbors": {
+                "Stephen Dillane": 175409,
+                "Yaphet Kotto": 135443
+            },
+            "value1": 10700000,
+            "value2": 1996
+        },
+        "T\u00e9a Leoni": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "T\u00e9a Leoni",
+            "neighbors": {
+                "Deep Impact (film)": 6721153
+            },
+            "value1": 52,
+            "value2": -1
+        },
+        "U-571 (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "U-571 (film)",
+            "neighbors": {
+                "Harvey Keitel": 1607594,
+                "Jake Weber": 2309090,
+                "Matthew Settle": 2591836
+            },
+            "value1": 127000000,
+            "value2": 2000
+        },
+        "Unforgiven": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Unforgiven",
+            "neighbors": {
+                "Morgan Freeman": 1965432
+            },
+            "value1": 159200000,
+            "value2": 1992
+        },
+        "Unleashed (2005 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Unleashed (2005 film)",
+            "neighbors": {
+                "Morgan Freeman": 628395
+            },
+            "value1": 50900000,
+            "value2": 2005
+        },
+        "Veronica Cartwright": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Veronica Cartwright",
+            "neighbors": {
+                "Alien (film)": 1520584
+            },
+            "value1": 69,
+            "value2": -1
+        },
+        "Victor Garber": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Victor Garber",
+            "neighbors": {
+                "Tuck Everlasting (2002 film)": 279710
+            },
+            "value1": 69,
+            "value2": -1
+        },
+        "Vince Vaughn": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Vince Vaughn",
+            "neighbors": {
+                "Four Christmases": 3410416
+            },
+            "value1": 48,
+            "value2": -1
+        },
+        "Ving Rhames": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Ving Rhames",
+            "neighbors": {
+                "The Long Walk Home": 81407
+            },
+            "value1": 59,
+            "value2": -1
+        },
+        "Violets Are Blue (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Violets Are Blue (film)",
+            "neighbors": {
+                "Bonnie Bedelia": 67761,
+                "Kevin Kline": 66806,
+                "Sissy Spacek": 68743
+            },
+            "value1": 4743287,
+            "value2": 1986
+        },
+        "Virginia Madsen": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Virginia Madsen",
+            "neighbors": {
+                "The Magic of Belle Isle": 1796
+            },
+            "value1": 57,
+            "value2": -1
+        },
+        "Wanted (2008 film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Wanted (2008 film)",
+            "neighbors": {
+                "Chris Pratt": 8753846,
+                "Common (rapper)": 7421739,
+                "James McAvoy": 8753846,
+                "Morgan Freeman": 4214814
+            },
+            "value1": 341400000,
+            "value2": 2008
+        },
+        "Warning Sign (film)": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Warning Sign (film)",
+            "neighbors": {
+                "Jeffrey DeMunn": 27015,
+                "Kathleen Quinlan": 29970,
+                "Sam Waterston": 24591,
+                "Yaphet Kotto": 24279
+            },
+            "value1": 1918117,
+            "value2": 1985
+        },
+        "Wil Wheaton": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Wil Wheaton",
+            "neighbors": {},
+            "value1": 46,
+            "value2": -1
+        },
+        "Will Arnett": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Will Arnett",
+            "neighbors": {
+                "The Lego Movie": 9772916
+            },
+            "value1": 48,
+            "value2": -1
+        },
+        "Will Ferrell": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Will Ferrell",
+            "neighbors": {
+                "The Lego Movie": 9198039
+            },
+            "value1": 51,
+            "value2": -1
+        },
+        "Willem Dafoe": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Willem Dafoe",
+            "neighbors": {
+                "Affliction (1997 film)": 100477
+            },
+            "value1": 63,
+            "value2": -1
+        },
+        "William Hurt": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "William Hurt",
+            "neighbors": {
+                "Tuck Everlasting (2002 film)": 283823
+            },
+            "value1": 68,
+            "value2": -1
+        },
+        "William Petersen": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "William Petersen",
+            "neighbors": {
+                "Hard Promises (1992 film)": 4641
+            },
+            "value1": 66,
+            "value2": -1
+        },
+        "William Sadler (actor)": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "William Sadler (actor)",
+            "neighbors": {
+                "The Shawshank Redemption": 857352
+            },
+            "value1": 68,
+            "value2": -1
+        },
+        "Witless Protection": {
+            "py/object": "vertex.Vertex",
+            "group": "Movie",
+            "key": "Witless Protection",
+            "neighbors": {
+                "Jenny McCarthy": 90470,
+                "Joe Mantegna": 58614
+            },
+            "value1": 4161625,
+            "value2": 2008
+        },
+        "Woody Harrelson": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Woody Harrelson",
+            "neighbors": {
+                "North Country (film)": 442105,
+                "Now You See Me (film)": 6170175,
+                "Now You See Me 2": 5875438
+            },
+            "value1": 57,
+            "value2": -1
+        },
+        "Yaphet Kotto": {
+            "py/object": "vertex.Vertex",
+            "group": "Actor",
+            "key": "Yaphet Kotto",
+            "neighbors": {
+                "Across 110th Street": 126582,
+                "Alien (film)": 1328105,
+                "Brubaker": 469895,
+                "Fighting Back (1982 American film)": 81012,
+                "Freddy's Dead: The Final Nightmare": 441772,
+                "Live and Let Die (film)": 2048101,
+                "Sharks' Treasure": 25316,
+                "The Liberation of L.B. Jones": 16455,
+                "The Puppet Masters (film)": 109456,
+                "The Running Man (1987 film)": 482278,
+                "The Star Chamber": 70886,
+                "Truck Turner": 28227,
+                "Two If by Sea": 135443,
+                "Warning Sign (film)": 24279
+            },
+            "value1": 79,
+            "value2": -1
+        }
+    }
+}

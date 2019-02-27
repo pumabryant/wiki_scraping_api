@@ -1,4 +1,5 @@
 import logging.config
+import operator
 import yaml
 
 with open('config.yaml', 'r') as f:
@@ -11,8 +12,6 @@ logger = logging.getLogger(__name__)
 class Query:
     def __init__(self, graph):
         self.graph = graph
-        self.gross = {}
-        self.oldest = {}
 
     def get_gross(self, movie):
         """
@@ -21,9 +20,11 @@ class Query:
         :return: The gross income of the movie
         """
         movie = self.graph.get_vertex(movie)
-        if movie is None:
-            return None
-        return movie.get_value()
+
+        if movie is not None:
+            return movie.get_value1()
+
+        return None
 
     def get_movies(self, actor):
         """
@@ -39,7 +40,7 @@ class Query:
         actor_vertex = self.graph.get_vertex(actor)
 
         for movie in actor_vertex.get_neighbors():
-            movies.append(movie.get_key())
+            movies.append(movie)
 
         return movies
 
@@ -55,7 +56,7 @@ class Query:
 
         actors = []
         for actor in movie_vertex.get_neighbors():
-            actors.append(actor.get_key())
+            actors.append(actor)
 
         return actors
 
@@ -65,16 +66,21 @@ class Query:
         :param num: The specified number of actors to return, default 10
         :return: List of the top num grossing actors
         """
+        actor_gross = {}
+
         for vertex in self.graph:
-            if vertex.get_group() is "Actor":
+            if vertex.get_group() == "Actor":
                 actor = vertex.get_key()
                 movies = vertex.get_neighbors()
                 total_gross = 0
                 for movie in movies:
                     total_gross += vertex.get_weight(movie)
-                self.gross[actor] = total_gross
+                actor_gross[actor] = total_gross
 
-        return self.gross
+        sorted_actor_ages = sorted(actor_gross.items(), key=operator.itemgetter(1), reverse=True)
+        top_actors = [(actor, gross) for (actor, gross) in sorted_actor_ages[:num]]
+
+        return top_actors
 
     def get_oldest_actors(self, num=10):
         """
@@ -82,13 +88,18 @@ class Query:
         :param num: The specified number of actors to return, default 10
         :return: List of the top num oldest actors
         """
-        for vertex in self.graph:
-            if vertex.get_group() is "Actor":
-                actor = vertex.get_key()
-                age = vertex.get_value()
-                self.oldest[actor] = age
+        actor_ages = {}
 
-        return self.oldest
+        for vertex in self.graph:
+            if vertex.get_group() == "Actor":
+                actor = vertex.get_key()
+                age = vertex.get_value1()
+                actor_ages[actor] = age
+
+        sorted_actor_ages = sorted(actor_ages.items(), key=operator.itemgetter(1), reverse=True)
+        oldest_actors = [(actor,age) for (actor,age) in sorted_actor_ages[:num]]
+
+        return oldest_actors
 
     def get_movies_year(self, year):
         """
@@ -97,12 +108,11 @@ class Query:
         :return: List of movies who meet the criteria
         """
         movies = []
-        for vertex in self.graph.get_vertices():
-            if vertex.get_group() is "Movie":
-                movie_title = vertex.get_key()
-                movie_year = vertex.get_value()
+        for vertex in self.graph:
+            if vertex.get_group() == "Movie":
+                movie_year = vertex.get_value2()
                 if movie_year == year:
-                    movies.append(movie_title)
+                    movies.append(vertex.get_key())
 
         return movies
 
@@ -115,9 +125,9 @@ class Query:
         actors = {}
         movies = self.get_movies_year(year)
         for movie in movies:
-            movie_actors = movie.get_neighbors()
+            movie_actors = self.graph.get_vertex(movie).get_neighbors()
             for movie_actor in movie_actors:
                 if movie_actor not in actors:
                     actors[movie_actor] = True
 
-        return actors.keys()
+        return list(actors.keys())

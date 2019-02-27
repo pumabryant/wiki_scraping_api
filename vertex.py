@@ -1,11 +1,12 @@
-from collections import OrderedDict
+
 
 class Vertex:
-    def __init__(self, key, value, group):
-        self.key = key
-        self.value = value
+    def __init__(self, group, key, value1, value2):
         self.group = group
-        self.neighbors = OrderedDict()
+        self.key = key
+        self.value1 = value1
+        self.value2 = value2
+        self.neighbors = {}
 
     def add_neighbor(self, neighbor, weight):
         self.neighbors[neighbor] = weight
@@ -16,8 +17,11 @@ class Vertex:
     def get_key(self):
         return self.key
 
-    def get_value(self):
-        return self.value
+    def get_value1(self):
+        return self.value1
+
+    def get_value2(self):
+        return self.value2
 
     def get_group(self):
         return self.group

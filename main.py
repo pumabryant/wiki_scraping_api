@@ -2,28 +2,32 @@ from utils import load, save
 from query import Query
 from scraper import Scraper
 
+URL = "https://en.wikipedia.org/wiki/Morgan_Freeman"
+TYPE = "Actor"
+
+
 def main():
-
     scraper = Scraper()
-    query = Query(scraper.get_graph())
-    scraper.scrape("https://en.wikipedia.org/wiki/Morgan_Freeman", "Actor")
-
-    movies = query.get_movies("Morgan Freeman")
-    for movie in movies:
-        print(movie)
-
+    scraper.scrape(URL, TYPE)
     save("data.json", scraper.get_graph())
 
-def try_load():
+
+def load_query():
     graph = load('data.json')
     query = Query(graph)
-    movies = query.get_movies("Morgan Freeman")
-    actors = query.get_actors("Brubaker")
-    for movie in movies:
-        print(movie)
-    for actor in actors:
-        print(actor)
+    query_year = 2008
+    query_gross_movie = "The Dark Knight (film)"
+    query_movie = "Now You See Me 2"
+    query_actor = "Dave Franco"
+
+    print(f'Gross Income for {query_gross_movie}: {query.get_gross(query_gross_movie)}')
+    print(f'Actors in {query_movie}: {query.get_actors(query_movie)}')
+    print(f'Movies starring {query_actor}: {query.get_movies(query_actor)}')
+    print(f'Movies in {query_year}: {query.get_movies_year(query_year)}')
+    print(f'Actors in {query_year}: {query.get_actors_year(query_year)}')
+    print(f'Oldest Actors: {query.get_oldest_actors()}')
+    print(f'Top Grossing Actors: {query.get_top_actors()}')
 
 
 #main()
-try_load()
+load_query()
