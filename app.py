@@ -8,13 +8,12 @@ graph = parse_data.parse('data.json')
 """ GET METHODS """
 
 
-@app.route('/')
-def index():
-    return "Actor and Movie API"
-
-
 @app.route('/actors', methods=['GET'])
 def get_filtered_actors():
+    """
+    Filter out actors who do not match some chosen attributes
+    :return:
+    """
     filter_names = request.args.getlist('name')
     filter_ages = request.args.getlist('age', type=int)
     filter_gross = request.args.getlist('gross', type=int)
@@ -40,6 +39,10 @@ def get_filtered_actors():
 
 @app.route('/movies', methods=['GET'])
 def get_filtered_movies():
+    """
+    Filter out movies who do not match some chosen attributes
+    :return:
+    """
     filter_names = request.args.getlist('name')
     filter_gross = request.args.getlist('gross', type=int)
     filter_years = request.args.getlist('year', type=int)
@@ -66,13 +69,13 @@ def get_filtered_movies():
 def does_match_filters(name, value_1, value_2, filter_names, filter_value1, filter_value2):
     """
     Determine if the given attributes match any of the selected filters
-    :param name:
-    :param value_1:
-    :param value_2:
-    :param filter_names:
-    :param filter_value1:
-    :param filter_value2:
-    :return:
+    :param name: The name of the movie/actor
+    :param value_1: The age/year of the movie/actor
+    :param value_2: The gross of the movie/actor
+    :param filter_names: The movies/actors to be filtered
+    :param filter_value1: The ages/years to be filtered
+    :param filter_value2: The gross' to be filtered
+    :return: If the attributes match the filters
     """
     match_name = False
     match_value_1 = False
@@ -94,7 +97,10 @@ def does_match_filters(name, value_1, value_2, filter_names, filter_value1, filt
 
 @app.route('/actors/<actor_name>', methods=['GET'])
 def get_actor(actor_name):
-
+    """
+    Retrive the first actor meta-info who matches with the given actor name
+    :return:
+    """
     actor_meta = {}
     for vertex in graph:
         if vertex.get_group() == 'Actor' and vertex.get_key() == actor_name:
@@ -104,20 +110,29 @@ def get_actor(actor_name):
             actor['gross'] = vertex.get_value2()
             actor_meta[actor_name] = actor
 
+    if not actor_meta:
+        abort(404)
+
     return jsonify(actor_meta)
 
 
-@app.route('/actors/<movie_title>', methods=['GET'])
+@app.route('/movies/<movie_title>', methods=['GET'])
 def get_movie(movie_title):
-
+    """
+    Retrive the first movie meta-info who matches with the given movie name
+    :return:
+    """
     movie_meta = {}
     for vertex in graph:
-        if vertex.get_group() == 'Movie' and vertex.get_key() == movie_meta:
+        if vertex.get_group() == 'Movie' and vertex.get_key() == movie_title:
             movie = dict()
             movie['title'] = vertex.get_key()
             movie['year'] = vertex.get_value1()
             movie['gross'] = vertex.get_value2()
             movie_meta[movie_title] = movie
+
+    if not movie_meta:
+        abort(404)
 
     return jsonify(movie_meta)
 
@@ -127,7 +142,7 @@ def get_movie(movie_title):
 
 @app.route('/api/a/actors/<string:actor_name>', methods=['PUT'])
 def update_actor(actor_name):
-    if actor_name is None or actor_name not in graph.get_vertices():
+    if actor_name not in graph.get_vertices():
         abort(404)
     if not request.json:
         abort(400)
@@ -150,7 +165,7 @@ def update_actor(actor_name):
 
 @app.route('/api/a/movies/<string:movie_name>', methods=['PUT'])
 def update_movie(movie_name):
-    if movie_name is None or movie_name not in graph.get_vertices():
+    if movie_name not in graph.get_vertices():
         abort(404)
     if not request.json:
         abort(400)
@@ -182,13 +197,10 @@ def create_actor():
     name = request.json['name']
     age = request.json.get('age', -1)
     gross = request.json.get('gross', 0)
-    actor = {
-        'name': name,
-        'age': age,
-        'gross': gross
-    }
 
-    return jsonify({name: actor}), 201
+    graph.add_vertex('Actor', name, age, gross)
+
+    return jsonify({'result': 'Created Actor'}), 201
 
 
 @app.route('/api/a/movies/', methods=['POST'])
@@ -199,13 +211,10 @@ def create_movie():
     name = request.json['name']
     year = request.json.get('year', -1)
     gross = request.json.get('gross', 0)
-    movie = {
-        'name': name,
-        'year': year,
-        'gross': gross
-    }
 
-    return jsonify({name: movie}), 201
+    graph.add_vertex('Movie', name, year, gross)
+
+    return jsonify({'result': 'Created Movie'}), 201
 
 
 """ DELETE METHODS """
@@ -213,12 +222,34 @@ def create_movie():
 
 @app.route('/api/a/actors/<string:actor_name>', methods=['DELETE'])
 def delete_actor(actor_name):
-    return
+    if actor_name not in graph.get_vertices():
+        abort(400)
+
+    actor_meta = graph.get_vertex(actor_name)
+
+    for movies in actor_meta.get_neighbors():
+        actors = graph.get_vertex(movies).get_neighbors()
+        del actors[actor_name]
+
+    graph.delete_vertex(actor_name)
+
+    return jsonify({'result': f'Deleted {actor_name}'})
 
 
-@app.route('/api/a/actors/<string:movie_name>', methods=['DELETE'])
+@app.route('/api/a/movies/<string:movie_name>', methods=['DELETE'])
 def delete_movie(movie_name):
-    return
+    if movie_name not in graph.get_vertices():
+        abort(400)
+
+    movie_meta = graph.get_vertex(movie_name)
+
+    for actors in movie_meta.get_neighbors():
+        movies = graph.get_vertex(actors).get_neighbors()
+        del movies[movie_name]
+
+    graph.delete_vertex(movie_name)
+
+    return jsonify({'result': f'Deleted {movie_name}'})
 
 
 """ ERROR HANDLERS """
@@ -229,6 +260,6 @@ def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
-
+@app.errorhandler(400)
+def bad_request(error):
+    return make_response(jsonify({'error': 'Bad Request'}), 400)

@@ -25,7 +25,6 @@ class Visualization:
         self.add_edges()
 
         self.net.show(file)
-        return
 
     def configure_graph(self):
         """

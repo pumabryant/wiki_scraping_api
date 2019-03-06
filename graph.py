@@ -10,6 +10,9 @@ class Graph:
         self.vertices[key] = vertex
         return vertex
 
+    def delete_vertex(self, key):
+        del self.vertices[key]
+
     def get_vertex(self, key):
         return self.vertices[key] if key in self.vertices else None
 
