@@ -17,11 +17,20 @@ class Vertex:
     def get_key(self):
         return self.key
 
+    def set_key(self, key):
+        self.key = key
+
     def get_value1(self):
         return self.value1
 
+    def set_value1(self, value1):
+        self.value1 = value1
+
     def get_value2(self):
         return self.value2
+
+    def set_value2(self, value2):
+        self.value2 = value2
 
     def get_group(self):
         return self.group

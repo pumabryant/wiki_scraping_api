@@ -1,6 +1,7 @@
 from utils import load, save
 from query import Query
 from scraper import Scraper
+from parse_data import parse
 
 URL = "https://en.wikipedia.org/wiki/Morgan_Freeman"
 TYPE = "Actor"
@@ -9,11 +10,11 @@ TYPE = "Actor"
 def main():
     scraper = Scraper()
     scraper.scrape(URL, TYPE)
-    save("data.json", scraper.get_graph())
+    save("scraper_data.json", scraper.get_graph())
 
 
 def load_query():
-    graph = load('data.json')
+    graph = load('scraper_data.json')
     query = Query(graph)
     query_year = 2008
     query_gross_movie = "The Dark Knight (film)"
@@ -29,5 +30,14 @@ def load_query():
     print(f'Top Grossing Actors: {query.get_top_actors()}')
 
 
-main()
-load_query()
+#main()
+#load_query()
+
+
+def parse_data():
+    graph = parse('data.json')
+    query = Query(graph)
+    query.get_hub_actors()
+    query.get_gross_age()
+
+parse_data()

@@ -40,3 +40,4 @@ def load(filename):
         data = jsonpickle.decode(save_file.read())
 
     return data
+
