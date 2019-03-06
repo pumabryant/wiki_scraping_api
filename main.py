@@ -2,6 +2,7 @@ from utils import load, save, parse, analyze_plot
 from query import Query
 from analyze import Analyze
 from scraper import Scraper
+from visualization import Visualization
 
 URL = "https://en.wikipedia.org/wiki/Morgan_Freeman"
 TYPE = "Actor"
@@ -39,6 +40,9 @@ def part2():
                  ylabel='Num of Connections', title='Connections per Actor')
     analyze_plot(age_gross, num, xlabel='Age',
                  ylabel='Total Gross', title='Total Gross per Age')
+    parse_graph = load('scraper_data.json')
+    visual = Visualization(parse_graph, switch=True)
+    visual.visualize('visual.html')
 
 
 part2()

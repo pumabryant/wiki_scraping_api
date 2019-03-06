@@ -1,13 +1,13 @@
 from pyvis.network import Network
-import utils
 
 COLOR_ACTOR = "#FF9AAB"
 COLOR_MOVIE = "#B6BFA7"
 
 
 class Visualization:
-    def __init__(self, graph):
+    def __init__(self, graph, switch=False):
         self.graph = graph
+        self.switch = switch
         self.node_groups = []
         self.node_infos = []
         self.name_indices = {}
@@ -50,7 +50,8 @@ class Visualization:
             if group == 'Actor':
                 node_info['Age'] = vertex.get_value1()
             else:
-                node_info['Year'] = vertex.get_value1()
+                node_info['Year'] = vertex.get_value1() \
+                    if not self.switch else vertex.get_value2()
             self.node_infos.append(node_info)
             self.name_indices[vertex.get_key()] = index
 
@@ -85,8 +86,3 @@ class Visualization:
             name = vertex.get_key()
             for neighbor in vertex.get_neighbors():
                 self.net.add_edge(self.name_indices[name], self.name_indices[neighbor])
-
-
-parse_graph = utils.parse('data.json')
-visual = Visualization(parse_graph)
-visual.visualize('visual.html')
