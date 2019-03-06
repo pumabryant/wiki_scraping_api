@@ -64,21 +64,40 @@ def parse(filename):
         graph.add_vertex(group, key, year, gross)
         for actor in actors:
             if actor in graph.get_vertices():
-                graph.add_edge(title, actor, 1)
+                age = graph.get_vertex(actor).get_value1()
+                graph.add_edge(title, actor, gross/age)
 
     return graph
 
 
-def analyze_plot(data_dict, num):
+def analyze_plot(data_dict, num, xlabel="", ylabel="", title=""):
+    """
+    Plot the given dictionary of key-value pairs in a bar chart
+    :param data_dict: Dictionary that holds the data to be plotted
+    :param num: The number of data points to plot
+    :param xlabel: The X-axis label
+    :param ylabel: The Y-axis label
+    :param title: The plot's title
+    :return:
+    """
     data_dict = dict(sorted(data_dict.items(), key=operator.itemgetter(1), reverse=True))
     x = list(data_dict.keys())
     y = list(data_dict.values())
     plt.bar(x[:num], y[:num])
     plt.xticks(rotation=90)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.title(title)
     plt.show()
 
 
 def get_actor_num_connections(actor_connections, actor_num_connections):
+    """
+    Get the total number of connections an actor has in a graph
+    :param actor_connections: The dictionary to store the connections information
+    :param actor_num_connections: The dictionary that holds the actor and coactor counts
+    :return:
+    """
     for actor, co_actors in actor_connections.items():
         actor_num_connections[actor] = 0
         for _, connections in co_actors.items():
@@ -86,6 +105,12 @@ def get_actor_num_connections(actor_connections, actor_num_connections):
 
 
 def get_coactor_count(actor_connections, actors):
+    """
+    Get the number of times an actor and another actor star in the same movie
+    :param actor_connections: The dictionary that holds the count information
+    :param actors: The actors to be analyzed
+    :return:
+    """
     for actor in actors:
         if actor not in actor_connections:
             actor_connections[actor] = {}

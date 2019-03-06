@@ -30,16 +30,15 @@ def load_query():
     print(f'Top Grossing Actors: {query.get_top_actors()}')
 
 
-#main()
-#load_query()
-
-
-def parse_data():
+def part2():
     graph = parse('data.json')
     analyzer = Analyze(graph)
-    actor_connections ,num = analyzer.get_hub_actors()
+    actor_connections, num = analyzer.get_hub_actors()
     age_gross, num = analyzer.get_gross_age()
-    analyze_plot(actor_connections, num)
-    analyze_plot(age_gross, num)
+    analyze_plot(actor_connections, num, xlabel='Actors',
+                 ylabel='Num of Connections', title='Connections per Actor')
+    analyze_plot(age_gross, num, xlabel='Age',
+                 ylabel='Total Gross', title='Total Gross per Age')
 
-parse_data()
+
+part2()
