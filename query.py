@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import logging.config
 import operator
 import yaml
@@ -132,53 +131,3 @@ class Query:
                     actors[movie_actor] = True
 
         return list(actors.keys())
-
-    def get_hub_actors(self, num=10):
-        actor_connections = {}
-
-        for vertex in self.graph:
-            if vertex.get_group() == "Movie":
-                actors = vertex.get_neighbors()
-                for actor in actors:
-                    if actor not in actor_connections:
-                        actor_connections[actor] = {}
-                    for co_actor in actors:
-                        if co_actor != actor:
-                            if co_actor not in actor_connections[actor]:
-                                actor_connections[actor][co_actor] = 1
-                            else:
-                                actor_connections[actor][co_actor] += 1
-
-        actor_num_connections = {}
-        for actor, co_actors in actor_connections.items():
-            actor_num_connections[actor] = 0
-            for _, connections in co_actors.items():
-                actor_num_connections[actor] += connections
-
-        self.analyze_plot(actor_num_connections, num)
-
-    def get_gross_age(self, num=10):
-        age_gross = {}
-
-        for vertex in self.graph:
-            if vertex.get_group() == "Movie":
-                actors = vertex.get_neighbors()
-                for actor in actors:
-                    info = self.graph.get_vertex(actor)
-                    age = info.get_value1()
-                    gross = info.get_value2()
-                    if age not in age_gross:
-                        age_gross[age] = gross
-                    else:
-                        age_gross[age] += gross
-
-        self.analyze_plot(age_gross, num)
-
-
-def analyze_plot(self, data_dict, num):
-    data_dict = dict(sorted(data_dict.items(), key=operator.itemgetter(1), reverse=True))
-    x = list(data_dict.keys())
-    y = list(data_dict.values())
-    plt.bar(x[:num], y[:num])
-    plt.xticks(rotation=90)
-    plt.show()

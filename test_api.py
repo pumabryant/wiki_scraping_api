@@ -165,8 +165,3 @@ class TestAPI(unittest.TestCase):
 
         response = self.app.delete('/api/a/movies/The Life of Bryant Collaguazo')
         self.assertEqual(response.status_code, 400)
-
-
-
-if __name__ == '__main__':
-    unittest.main()

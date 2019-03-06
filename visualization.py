@@ -1,5 +1,5 @@
 from pyvis.network import Network
-import parse_data
+import utils
 
 COLOR_ACTOR = "#FF9AAB"
 COLOR_MOVIE = "#B6BFA7"
@@ -87,6 +87,6 @@ class Visualization:
                 self.net.add_edge(self.name_indices[name], self.name_indices[neighbor])
 
 
-parse_graph = parse_data.parse('data.json')
+parse_graph = utils.parse('data.json')
 visual = Visualization(parse_graph)
 visual.visualize('visual.html')

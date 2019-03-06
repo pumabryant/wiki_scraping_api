@@ -1,8 +1,9 @@
 from flask import Flask, jsonify, request, make_response, abort
-import parse_data
+import utils
+
 app = Flask(__name__)
 
-graph = parse_data.parse('data.json')
+graph = utils.parse('data.json')
 
 
 """ GET METHODS """
@@ -142,6 +143,11 @@ def get_movie(movie_title):
 
 @app.route('/api/a/actors/<string:actor_name>', methods=['PUT'])
 def update_actor(actor_name):
+    """
+    Update the given actor's meta-info, if valid
+    :param actor_name: The name of the actor whose meta-info should be updated
+    :return:
+    """
     if actor_name not in graph.get_vertices():
         abort(404)
     if not request.json:
@@ -165,6 +171,11 @@ def update_actor(actor_name):
 
 @app.route('/api/a/movies/<string:movie_name>', methods=['PUT'])
 def update_movie(movie_name):
+    """
+    Update the given movies's meta-info, if valid
+    :param movie_name: The name of the movie whose meta-info should be updated
+    :return:
+    """
     if movie_name not in graph.get_vertices():
         abort(404)
     if not request.json:
@@ -191,6 +202,10 @@ def update_movie(movie_name):
 
 @app.route('/api/a/actors/', methods=['POST'])
 def create_actor():
+    """
+    Create an actor object with given attributes, if valid
+    :return:
+    """
     if not request.json or 'name' not in request.json:
         abort(400)
 
@@ -205,6 +220,10 @@ def create_actor():
 
 @app.route('/api/a/movies/', methods=['POST'])
 def create_movie():
+    """
+    Create a movie object with given attributes, if valid
+    :return:
+    """
     if not request.json or 'name' not in request.json:
         abort(400)
 
@@ -222,6 +241,11 @@ def create_movie():
 
 @app.route('/api/a/actors/<string:actor_name>', methods=['DELETE'])
 def delete_actor(actor_name):
+    """
+    Delete an actor object, if it exists
+    :param actor_name: The name of the actor whose meta-info will be deleted
+    :return:
+    """
     if actor_name not in graph.get_vertices():
         abort(400)
 
@@ -238,6 +262,11 @@ def delete_actor(actor_name):
 
 @app.route('/api/a/movies/<string:movie_name>', methods=['DELETE'])
 def delete_movie(movie_name):
+    """
+    Delete a movie object, if it exists
+    :param movie_name: The name of the movie whose meta-info will be deleted
+    :return:
+    """
     if movie_name not in graph.get_vertices():
         abort(400)
 
@@ -257,9 +286,19 @@ def delete_movie(movie_name):
 
 @app.errorhandler(404)
 def not_found(error):
+    """
+    Handle not found errors
+    :param error: NOT FOUND error
+    :return:
+    """
     return make_response(jsonify({'error': 'Not found'}), 404)
 
 
 @app.errorhandler(400)
 def bad_request(error):
+    """
+    Handle bad request errors
+    :param error: BAD REQUEST error
+    :return:
+    """
     return make_response(jsonify({'error': 'Bad Request'}), 400)

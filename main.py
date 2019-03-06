@@ -1,7 +1,7 @@
-from utils import load, save
+from utils import load, save, parse, analyze_plot
 from query import Query
+from analyze import Analyze
 from scraper import Scraper
-from parse_data import parse
 
 URL = "https://en.wikipedia.org/wiki/Morgan_Freeman"
 TYPE = "Actor"
@@ -36,8 +36,10 @@ def load_query():
 
 def parse_data():
     graph = parse('data.json')
-    query = Query(graph)
-    query.get_hub_actors()
-    query.get_gross_age()
+    analyzer = Analyze(graph)
+    actor_connections ,num = analyzer.get_hub_actors()
+    age_gross, num = analyzer.get_gross_age()
+    analyze_plot(actor_connections, num)
+    analyze_plot(age_gross, num)
 
 parse_data()
