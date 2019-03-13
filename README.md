@@ -1,2 +1,2 @@
-# sp18-cs242-assignment2
-
+# The aim of this project is to get experience with web scraping We use Wikipedia as our source, where we gather movie and actor infomartion. Then we set up a REST API in which users can send and recieve requests to view information from the data we scraped through a JSON format.
+# We then visualize the movie and actor data as a graph, where actors and movies are connected if there is some sort of connection such as an actor starring in a movie and vice-versa.
